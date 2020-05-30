@@ -13,7 +13,8 @@
     ]
   },
   "sample_request": {
-    "country": "NG"
+    "country": "NG",
+    "public_key": "FLWPUBK-6c4xxxxxxxxxxd44f907c9xxxxxxxxxx-X"
   },
   "sample_response": {
     "status": "success",
