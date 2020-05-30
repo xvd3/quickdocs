@@ -1,5 +1,5 @@
 {
-  "description": "Resolve a bank account to get the holder's fullname",
+  "description": "Resolve a bank account to get the holder's fullname.",
   "endpoint": "POST /v3/accounts/resolve",
   "request_spec": {
     "type":"post_body",
