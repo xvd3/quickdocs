@@ -13,7 +13,7 @@
     ]
   },
   "sample_request": {
-    "country": "NG",
+    "country": "NG"
   },
   "sample_response": {
     "status": "success",
