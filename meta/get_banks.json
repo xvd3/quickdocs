@@ -6,15 +6,11 @@
     "spec": [
       {
         "country": "pass either NG, GH, KE, UG, ZA or TZ to get list of banks in Nigeria, Ghana, Kenya, Uganda, South Africa or Tanzania respectively"
-      },
-      {
-        "public_key": "merchant public key"
       }
     ]
   },
   "sample_request": {
-    "country": "NG",
-    "public_key": "FLWPUBK-6c4xxxxxxxxxxd44f907c9xxxxxxxxxx-X"
+    "country": "NG"
   },
   "sample_response": {
     "status": "success",
