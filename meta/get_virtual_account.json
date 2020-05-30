@@ -1,0 +1,30 @@
+{
+  "description": "This allows you to fetch a virtual account number using order reference",
+  "endpoint": "GET /v3/virtual-account-numbers/:order_ref",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "order_ref": "This is the order reference returned in the virtual-nuban creation."
+    }
+  },
+  "sample_request": {
+    "order_ref": "URF_1579513580629_5981535"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Virtual nuban fetched",
+    "data": {
+      "response_code": "02",
+      "response_message": "Transaction in progress",
+      "flw_ref": "FLW-9b04c88aaf2244379f256691836fd9c9",
+      "order_ref": "URF_1579513580629_5981535",
+      "account_number": "7826463244",
+      "frequency": "5",
+      "bank_name": "WEMA BANK",
+      "created_at": "2020-01-20 09:46:23",
+      "expiry_date": "2020-01-25 23:59:59",
+      "note": "Please make a bank transfer to Jane Wu",
+      "amount": 50700
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "description": "This meta shows you how to create an otp",
+  "endpoint": "POST /v3/otp",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "length": "This is Integer length you want for the OTP.",
+      "customer": "This is an object with the name, email and phone number of the customer.",
+      "sender": "This is your merchant/business name. It would display when the OTP is sent.",
+      "send": "Set to true to send otp to customer",
+      "medium": "Pass the medium you want your customers to receive the OTP on. Possible values are sms, email and whatsapp you can pass more than one medium in the array",
+      "expiry": "Pass an integer value represented in minutes for how long you want the OTP to live for before expiring."
+    }
+  },
+  "sample_request": {
+    "length": 6,
+    "customer": {
+     "name": "John Madakin",
+     "email": "johnmadakin@gmail.com",
+     "phone": "08100733003"
+    },
+    "sender": "Annon Domini Enterprise",
+    "send": true,
+    "medium": ["sms"],
+    "expiry": 5
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "OTP generated successfully",
+    "data": {
+      "medium": "sms",
+      "reference": "flw-tx-1223334444444",
+      "otp": "042344",
+      "expiry_date": "2020-04-20T11:57:10.8113237+00:00",
+      "created_at": "2020-03-20T16:09:34.000Z"
+    }
+  }
+}

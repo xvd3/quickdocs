@@ -1,0 +1,28 @@
+{
+  "description": "This API is used to update the Ebills",
+  "endpoint": "PUT /v3/ebills/:reference",
+  "request_spec": {
+    "type": ["params", "put_body"],
+    "spec": [
+      {
+        "reference": "This is the reference returned in the create order endpoint as flw_ref."
+      },
+      {
+        "currency": "The only available currency is NGN",
+        "amount": "The amount you would like to update the order with."
+      }
+    ]
+  },
+  "sample_request": {
+    "reference": "RVEBLS-6DB2D191EC44-134",
+    "currency": "NGN",
+    "amount": 3000
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Ebills updated",
+    "data": {
+      "updated": true
+    }
+  }
+}

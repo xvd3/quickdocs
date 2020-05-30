@@ -1,0 +1,40 @@
+{
+  "description": "Fetch details of a single card",
+  "endpoint": "GET /v3/virtual-cards/:id",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "virtual card id"
+    }
+  },
+  "sample_request": {
+    "id": "7dc7b98c-7f6d-48f3-9b31-859a145c8085"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Card fetched successfully",
+    "data": {
+      "id": "7dc7b98c-7f6d-48f3-9b31-859a145c8085",
+      "account_id": 65637,
+      "amount": "20,000.00",
+      "currency": "NGN",
+      "card_hash": "7dc7b98c-7f6d-48f3-9b31-859a145c8085",
+      "card_pan": "5366130719043293",
+      "masked_pan": "536613*******3293",
+      "city": "Lekki",
+      "state": "Lagos",
+      "address_1": "19, Olubunmi Rotimi",
+      "address_2": null,
+      "zip_code": "23401",
+      "cvv": "267",
+      "expiration": "2023-01",
+      "send_to": null,
+      "bin_check_name": null,
+      "card_type": "mastercard",
+      "name_on_card": "Jermaine Graham",
+      "created_at": "2020-01-17T18:31:48.97Z",
+      "is_active": true,
+      "callback_url": "https://your-callback-url.com/"
+    }
+  }
+}

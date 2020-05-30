@@ -1,0 +1,20 @@
+{
+  "description": "This meta shows you how to retrieve a history of all purchased bill services including commission earned.",
+  "endpoint": "GET /v3/bills",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "from": "This is the start date it can be in formats: YYYY-MM-DDTHH:MM:SSZ or YYYY-MM-DD",
+      "to": "This is the end date, it can be in formats: YYYY-MM-DDTHH:MM:SSZ or YYYY-MM-DD",
+      "page": "This is the page you want to start from",
+      "reference": "This is the customer ID, pass this if you want to retrieve bill history for a particular customer ID."
+    }     
+  },
+  "sample_request":{
+    "from": "2018-08-01",
+    "to": "2018-08-27",
+    "page": 20,
+    "reference": "+233494850059"
+  },
+  "sample_response": {}
+}

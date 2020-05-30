@@ -1,0 +1,18 @@
+{
+  "description": "Terminate an existing virtual card",
+  "endpoint": "PUT /v3/virtual-cards/:id/terminate",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "virtual card id"
+    }
+  },
+  "sample_request": {
+    "id": "1cb36826-8e05-40d6-8b9e-7f7439a141cb"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Card terminated successfully",
+    "data": null
+  }
+}

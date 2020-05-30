@@ -1,0 +1,41 @@
+{
+  "description": "This API allows you to create a new Ebills order",
+  "endpoint": "POST /v3/ebills",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "narration": "Transaction narration",
+      "number_of_units": "Set the value to 1. It describes the number of items the customer is paying for",
+      "currency": "The only available currency is NGN",
+      "amount": "This is the amount value to be paid. If the customer needs to pay a lesser or higher amount please call the update order endpoint to update the amount",
+      "phone_number": "Phone number of customer",
+      "email": "Email address of customer",
+      "tx_ref": "Your unique transaction reference to be generated along with every order",
+      "ip": "ip address of deviced used",
+      "country": "country of transaction",
+      "custom_business_name": "Use this to set a custom business namee"
+    }
+  },
+
+  "sample_request": {
+    "narration": "test",
+    "number_of_units": 1,
+    "currency": "NGN",
+    "amount": 100,
+    "phone_number": "09384747474",
+    "email": "jake@rad.com",
+    "tx_ref": "773838837373",
+    "ip": "127.9.0.7",
+    "custom_business_name": "John Madakin",
+    "country": "NG"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Ebills created",
+    "data": {
+      "flw_ref": "RVEBLS-6DB2D191EC44-134",
+      "tx_ref": "773838837373",
+      "response_message": "Pending funds transfer or bank branch payment"
+    }
+  }
+}

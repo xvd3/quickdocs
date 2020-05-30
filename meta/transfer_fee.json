@@ -1,0 +1,29 @@
+{
+  "description": "Get applicable transfer fee",
+  "endpoint": "GET /v3/transfers/fee",
+  "request_spec": {
+    "type": "params_query",
+    "spec": {
+      "currency": "This get's the fee in a particular currency"
+    }
+  },
+  "sample_request": {
+    "currency": "KES"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Transfer fee fetched",
+    "data": [
+      {
+        "fee_type": "value",
+        "currency": "KES",
+        "fee": 280
+      },
+      {
+        "fee_type": "value",
+        "currency": "KES",
+        "fee": 0
+      }
+    ]
+  }
+}

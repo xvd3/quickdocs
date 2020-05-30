@@ -1,0 +1,56 @@
+{
+  "description": "Verify transaction using merchant transaction reference",
+  "endpoint": "GET /v3/transactions/:tx_ref/verify",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "tx_ref": "This is the merchant's unique transaction reference"
+    }
+  },
+  "sample_request": {
+    "tx_ref": "Flutterwave-Pages050154504095"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Transaction fetched successfully",
+    "data": {
+      "id": 1190701,
+      "tx_ref": "khlm-1585303285660",
+      "flw_ref": "FLW-MOCK-d4e00d52edf988ab73508df4ce95b69f",
+      "device_fingerprint": "69e6b7f0b72037ddsa32890170fbe03986c",
+      "amount": 10000,
+      "currency": "NGN",
+      "charged_amount": 10000,
+      "app_fee": 3416,
+      "merchant_fee": 0,
+      "processor_response": "Approved. Successful",
+      "auth_model": "VBVSECURECODE",
+      "ip": "i.js",
+      "narration": "CARD Transaction ",
+      "status": "successful",
+      "payment_type": "card",
+      "created_at": "2020-03-27T10:01:33.000Z",
+      "account_id": 73362,
+      "card": {
+        "first_6digits": "424242",
+        "last_4digits": "4242",
+        "issuer": " CREDIT",
+        "country": "VISA TEST CARD",
+        "type": "VISA",
+        "token": "flw-t1nf-b47979b223b58f44dc43ac06a633eaff-m03k",
+        "expiry": "09/20"
+      },
+      "meta": {
+        "artiste": "logic"
+      },
+      "amount_settled": 6584,
+      "customer": {
+        "id": 347943,
+        "name": "munotor sarkis",
+        "phone_number": "0902620185",
+        "email": "user@gmail.com",
+        "created_at": "2020-03-25T10:20:50.000Z"
+      }
+    }
+  }
+}

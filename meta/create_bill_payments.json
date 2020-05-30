@@ -1,0 +1,34 @@
+{
+  "description": "This meta shows you how to create an bill payments",
+  "endpoint": "POST /v3/bills",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "country": "This is the country attached to the service being bought e.g. if Service is Airtime and country is NG it means you are buying airtime in Nigeria.",
+      "customer": "This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number",
+      "amount": "This is the amount for the service you would like to buy.",
+      "recurrence": "This determines if you are buying a service recurrently or not. ONCE - This is a one time payment, HOURLY - This is an hourly payment, DAILY - This is a daily payment, WEEKLY - This is a weekly payment, MONTHLY - This is a monthly payment.",
+      "type": "Pass the following possible values based on the service being bought: AIRTIME, DSTV, DSTV BOX OFFICE.",
+      "reference": "This is a unique reference passed by the developer to identify transactions on their end."
+    }
+  },
+  "sample_request": {
+    "country": "NG",
+    "customer": "+23490803840303",
+    "amount": 500,
+    "recurrence": "ONCE",
+    "type": "AIRTIME",
+    "reference": "9300049404444"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Bill payment successful",
+    "data": {
+      "phone_number": "+23490803840303",
+      "amount": 500,
+      "network": "9MOBILE",
+      "flw_ref": "CF-FLYAPI-20200311081921359990",
+      "reference": "BPUSSD1583957963415840"
+    }
+  }
+}

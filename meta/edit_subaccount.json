@@ -1,0 +1,48 @@
+{
+  "description": "This allows you to update an existing subaccount.",
+  "endpoint": "PUT /v3/subaccounts/:id",
+  "request_spec": {
+    "type": ["params", "put_body"],
+    "spec": [
+      {
+        "id": "The is the subaccount ID, you can get it from the List Subaccount endpoint."
+      },
+      {
+        "account_bank": "This is the sub-accounts bank ISO code, use the List of Banks for Transfer endpoint to retrieve a list of bank codes.",
+        "account_number": "This is the customer's account number.",
+        "business_name": "This is the sub-account business name.",
+        "business_email": "This is the sub-account business email",
+        "split_type": "This can be set as percentage or flat when set as percentage",
+        "split_value": "This can be a percentage value or flat value depending on what was set on split_type"
+      }
+    ]
+  },
+  "sample_request": {
+    "id": "234",
+    "account_number": "0690000034",
+    "business_name": "Synergy Alliance",
+    "business_email": "ted@synergyalliance.com",
+    "account_bank": "044",
+    "split_type": "flat",
+    "split_value": "200"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Subaccount updated",
+    "data": {
+      "id": 195,
+      "account_number": "0690000032",
+      "account_bank": "044",
+      "business_name": "Kaywise Global",
+      "full_name": "Kaywise Global",
+      "created_at": "2018-11-16T16:04:23.000Z",
+      "meta": null,
+      "account_id": 11447,
+      "split_ratio": 1,
+      "split_type": "flat",
+      "split_value": "100",
+      "subaccount_id": "RS_884E7E4BD793ADA77F491CF4AD3DE19E5",
+      "bank_name": "ACCESS BANK NIGERIA"
+    }
+  }
+}

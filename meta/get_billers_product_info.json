@@ -1,0 +1,43 @@
+{
+  "description": "This meta shows you how to get the amount to be paid for a product.",
+  "endpoint": "GET /v3/billers/:id/products/:product_id",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "This is the biller's code",
+      "product_id": "This is the product code for the particular biller"
+    }
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "billers products item retrieval successful",
+    "data": {
+      "exact": true,
+      "items": [
+        {
+          "name": "email address",
+          "id": "42107710",
+          "type": "Alphanumeric",
+          "value": "0",
+          "required": true,
+          "length": "10",
+          "fixed": false
+        },
+        {
+          "name": null,
+          "id": "42107711:42107712",
+          "type": "Numeric",
+          "value": "3500",
+          "required": true,
+          "length": null,
+          "fixed": true
+        }
+      ],
+      "biller_code": "BIL136",
+      "product_code": "OT151",
+      "product_name": "GENESIS GROUP COLLEGE GRADUATION FEES",
+      "amount": "3500.0"
+    }
+  }
+}

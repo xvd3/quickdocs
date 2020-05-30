@@ -1,0 +1,184 @@
+{
+  "description": "This allows you to list all or specific subaccounts.",
+  "endpoint": "GET /v3/subaccounts",
+  "request_spec": {
+    "type": "params_query",
+    "spec": {
+      "account_number": "This is the subaccount's account number, it can be used to retrieve the specific subaccount.",
+      "account_bank": "This is the bank code for the subaccount's bank, you can use the List of Banks for Transfer API to retrieve a bank code.",
+      "bank_name": "This is the subaccounts bank name e.g. Access Bank Nigeria, you can use the List of Banks for Transfer API to retrieve a bank name."
+    }
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "Subaccounts fetched",
+    "meta": {
+      "page_info": {
+        "total": 8,
+        "current_page": 1,
+        "total_pages": 1
+      }
+    },
+    "data": [
+      {
+        "id": 2181,
+        "account_number": "0690000037",
+        "account_bank": "044",
+        "business_name": "Eternal Blue",
+        "full_name": "Ibra Mili",
+        "created_at": "2020-01-20T06:47:56.000Z",
+        "meta": [
+          {
+            "meta_name": "mem_adr",
+            "meta_value": "0x16241F327213"
+          }
+        ],
+        "account_id": 88747,
+        "split_ratio": 1,
+        "split_type": "percentage",
+        "split_value": 0.5,
+        "subaccount_id": "RS_9BD2ACE480785E759A16FDE1874A6657",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 2180,
+        "account_number": "0690000035",
+        "account_bank": "044",
+        "business_name": "Eternal Blue",
+        "full_name": "Peter Crouch",
+        "created_at": "2020-01-20T06:44:58.000Z",
+        "meta": [
+          {
+            "meta_name": "mem_adr",
+            "meta_value": "0x16241F327213"
+          }
+        ],
+        "account_id": 88746,
+        "split_ratio": 1,
+        "split_type": "flat",
+        "split_value": 0,
+        "subaccount_id": "RS_5096825149E9FDDC65864F79B815AB45",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 2164,
+        "account_number": "0690000043",
+        "account_bank": "044",
+        "business_name": "JK Services",
+        "full_name": "Roberta Weber",
+        "created_at": "2020-01-17T16:25:36.000Z",
+        "meta": [{}],
+        "account_id": 88496,
+        "split_ratio": 1,
+        "split_type": "flat",
+        "split_value": 0,
+        "subaccount_id": "RS_A560B61FF493A3720913B0487030D2A5",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 2063,
+        "account_number": "0690000039",
+        "account_bank": "044",
+        "business_name": "Sharp Guy",
+        "full_name": "Dotun Ajib",
+        "created_at": "2020-01-02T21:54:35.000Z",
+        "meta": [
+          {
+            "swift_code": ""
+          }
+        ],
+        "account_id": 86548,
+        "split_ratio": 1,
+        "split_type": "percentage",
+        "split_value": 0.6,
+        "subaccount_id": "RS_2A9D2F79274AD40924983F5BA6975336",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 1962,
+        "account_number": "0690000042",
+        "account_bank": "044",
+        "business_name": "Sam Son",
+        "full_name": "Forrest Terry",
+        "created_at": "2019-12-09T13:27:04.000Z",
+        "meta": [
+          {
+            "swift_code": ""
+          }
+        ],
+        "account_id": 84353,
+        "split_ratio": 1,
+        "split_type": "percentage",
+        "split_value": 0.02,
+        "subaccount_id": "RS_008F29575D91B6E80BB31F5B374CBF4E",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 1961,
+        "account_number": "0690000033",
+        "account_bank": "044",
+        "business_name": "Zen Daya",
+        "full_name": "Bale Gary",
+        "created_at": "2019-12-09T13:19:41.000Z",
+        "meta": [
+          {
+            "swift_code": ""
+          }
+        ],
+        "account_id": 84351,
+        "split_ratio": 1,
+        "split_type": "percentage",
+        "split_value": 0.05,
+        "subaccount_id": "RS_DE6A6DDCB8C0708D7D39B7DFEC0AC8B7",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 1960,
+        "account_number": "0690000031",
+        "account_bank": "044",
+        "business_name": "Zen Daya",
+        "full_name": "Forrest Green",
+        "created_at": "2019-12-09T13:18:14.000Z",
+        "meta": [
+          {
+            "swift_code": ""
+          }
+        ],
+        "account_id": 84349,
+        "split_ratio": 1,
+        "split_type": "percentage",
+        "split_value": 0.05,
+        "subaccount_id": "RS_7F017022CF4E8A7F0BD5BBD86BD442B0",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      },
+      {
+        "id": 1663,
+        "account_number": "0690000032",
+        "account_bank": "044",
+        "business_name": "Monkey Tail",
+        "full_name": "Pastor Bright",
+        "created_at": "2019-09-25T13:44:23.000Z",
+        "meta": [
+          {
+            "swift_code": ""
+          }
+        ],
+        "account_id": 75465,
+        "split_ratio": 1,
+        "split_type": "flat",
+        "split_value": 100,
+        "subaccount_id": "RS_19D8078A8CB10757BA7ACA8FB695D17C",
+        "bank_name": "ACCESS BANK NIGERIA",
+        "country": "NG"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "This meta shows you how to get the status of a bill purchase.",
+  "endpoint": "GET /v3/bills:reference",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "reference": "This is the tx_ref of the bill transaction"
+    }
+  },
+  "sample_request": "/v3/bills/CF-FLYAPI-201808240106311799470372",
+  "sample_response": {
+    "status": "success",
+    "message": "Bill status fetch successful",
+    "data": {
+      "tx_ref": "CF-FLYAPI-201808240106311799470372",
+      "amount": 500,
+      "fee": 0,
+      "currency": null,
+      "extra": null,
+      "flw_ref": null,
+      "token": null
+    }
+  }
+}

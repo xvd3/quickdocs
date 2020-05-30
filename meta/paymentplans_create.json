@@ -1,0 +1,34 @@
+{
+  "description": "Create a payment plan",
+  "endpoint": "POST /v3/payment-plans",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "amount": "the amount for the plan.",
+      "name": "what will appear on the subscription reminder email",
+      "interval": "This is the charge interval e.g interval: \"daily\" ",
+      "duration": "This is the frequency, it is numeric, e.g. if set to 5 and intervals is set to monthly you would be charged 5 months, and then the subscription stops"
+    }
+  },
+  "sample_request": {
+    "amount": 5000,
+    "name": "the akhlm postman plan 2",
+    "interval": "monthly",
+    "duration": 48
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Payment plan created",
+    "data": {
+      "id": 3807,
+      "name": "the akhlm postman plan 2",
+      "amount": 5000,
+      "interval": "monthly",
+      "duration": 48,
+      "status": "active",
+      "currency": "NGN",
+      "plan_token": "rpp_12d2ef3d5ac1c13b9d30",
+      "created_at": "2020-01-16T18:08:19.000Z"
+    }
+  }
+}

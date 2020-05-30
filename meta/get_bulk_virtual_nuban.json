@@ -1,0 +1,84 @@
+{
+  "description": "This allows you to fetch bulk virtual nubans using batch id",
+  "endpoint": "GET /v3/bulk-virtual-account-numbers/:batch_id",
+  "request_spec": {
+    "type": "params_query",
+    "spec": {
+      "batch_id": "This is the batch ID returned in the bulk virtual account numbers creation."
+    }
+  },
+  "sample_request": {
+    "batch_id": "-RND_2641579516055928"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Bulk virtual accounts fetched",
+    "data": [
+      {
+        "response_code": "02",
+        "response_message": "Transaction in progress",
+        "flw_ref": "FLW-f2be3dfeb4fb4f1eb95c236b3129ef0c",
+        "order_ref": "URF_1579516057896_3120635",
+        "account_number": "7827737349",
+        "frequency": "N/A",
+        "bank_name": "WEMA BANK",
+        "created_at": "2020-01-20 10:27:38",
+        "expiry_date": "N/A",
+        "note": "Please make a bank transfer to Jane Wu",
+        "amount": null
+      },
+      {
+        "response_code": "02",
+        "response_message": "Transaction in progress",
+        "flw_ref": "FLW-6117c6e877e34f7e80b76268ce73bb69",
+        "order_ref": "URF_1579516058932_17235",
+        "account_number": "7827554918",
+        "frequency": "N/A",
+        "bank_name": "WEMA BANK",
+        "created_at": "2020-01-20 10:27:39",
+        "expiry_date": "N/A",
+        "note": "Please make a bank transfer to Jane Wu",
+        "amount": null
+      },
+      {
+        "response_code": "02",
+        "response_message": "Transaction in progress",
+        "flw_ref": "FLW-590fb41034b24dcd9f822f2c02c3cf98",
+        "order_ref": "URF_1579516059900_4435935",
+        "account_number": "7827619600",
+        "frequency": "N/A",
+        "bank_name": "WEMA BANK",
+        "created_at": "2020-01-20 10:27:40",
+        "expiry_date": "N/A",
+        "note": "Please make a bank transfer to Jane Wu",
+        "amount": null
+      },
+      {
+        "response_code": "02",
+        "response_message": "Transaction in progress",
+        "flw_ref": "FLW-8e3fb79bb27040d69da1dbe467da8e7c",
+        "order_ref": "URF_1579516060920_1225335",
+        "account_number": "7827266267",
+        "frequency": "N/A",
+        "bank_name": "WEMA BANK",
+        "created_at": "2020-01-20 10:27:41",
+        "expiry_date": "N/A",
+        "note": "Please make a bank transfer to Jane Wu",
+        "amount": null
+      },
+      {
+        "response_code": "02",
+        "response_message": "Transaction in progress",
+        "flw_ref": "FLW-1a5264671801416ba09211d0142f0bd1",
+        "order_ref": "URF_1579516061920_4339335",
+        "account_number": "7827342397",
+        "frequency": "N/A",
+        "bank_name": "WEMA BANK",
+        "created_at": "2020-01-20 10:27:42",
+        "expiry_date": "N/A",
+        "note": "Please make a bank transfer to Jane Wu",
+        "amount": null
+      }
+    ]
+  }
+}

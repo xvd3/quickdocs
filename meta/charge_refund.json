@@ -1,0 +1,62 @@
+{
+  "description": "This allows the merchant to refund a captured amount.",
+  "endpoint": "POST /v3/charges/:flw_ref/refund",
+  "request_spec": {
+    "type": ["params", "post_body"],
+    "authorization": "Bearer {{secret_key}}",
+    "spec": {
+      "secret_key": "Required - true : This is a unique key generated for each button created on Rave’s dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
+      "flw_ref": "Required - true : This is he flw_ref returned in the capture response.",
+      "amount": "Required - true : The amount to be refunded."
+      
+    }
+  },
+  "sample_request": {
+    "amount": 10000
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Charge refunded",
+    "data": {
+      "id": 1196959,
+      "tx_ref": "MC-1585591130282",
+      "flw_ref": "FLW001297026",
+      "device_fingerprint": "69e6b7f0b72037aa8428b70fbe03986c",
+      "amount": 10000,
+      "charged_amount": 10000,
+      "app_fee": 3416,
+      "merchant_fee": 0,
+      "processor_response": "APPROVED",
+      "auth_model": "VBVSECURECODE",
+      "currency": "NGN",
+      "ip": "169.123.8.9",
+      "narration": "FLW-PBF CARD Transaction ",
+      "status": "refunded",
+      "auth_url": "N/A",
+      "payment_type": "card",
+      "fraud_status": "ok",
+      "charge_type": "preauth",
+      "created_at": "2020-03-30T17:58:56.000Z",
+      "account_id": 73362,
+      "customer": {
+        "id": 347498,
+        "phone": "0902620185",
+        "fullName": "temi desola",
+        "customertoken": null,
+        "email": "user@gmail.com",
+        "createdAt": "2020-03-24T17:38:27.000Z",
+        "updatedAt": "2020-03-24T17:38:27.000Z",
+        "deletedAt": null,
+        "AccountId": 73362
+      },
+      "card": {
+        "first_6digits": "537728",
+        "last_4digits": "7450",
+        "issuer": "MASTERCARD JSB PROBUSINESSBANK CREDITGOLD",
+        "country": "RU",
+        "type": "MASTERCARD",
+        "expiry": "09/21"
+      }
+    }
+  }
+}

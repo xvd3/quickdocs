@@ -1,0 +1,21 @@
+{
+  "description": "This meta shows you how to validate an otp",
+  "endpoint": "POST /v3/otps/:reference/validate",
+  "request_spec": {
+    "type": "post_body, params",
+    "spec": {
+      "params": {
+        "reference": "This is the reference that was returned in the create OTP response."
+      },
+      "otp": "This is the One time Pin sent to the user. You are meant to collect this from the user for validation"
+    }
+  },
+  "sample_request": {
+    "otp": "481208"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Otp Authenticated successfully",
+    "data": null
+  }
+}

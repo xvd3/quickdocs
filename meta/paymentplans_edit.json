@@ -1,0 +1,36 @@
+{
+  "description": "Update an existing payment plan",
+  "endpoint": "PUT /v3/payment-plans/:id",
+  "request_spec": {
+    "type": ["params", "put_body"],
+    "spec": [
+      {
+        "id": "payment plan id"
+      },
+      {
+        "name": "Name of the payment plan",
+        "status": "Status you would like to update the payment plan to. Possible values are \"active\", \"cancelled\""
+      }
+    ]
+  },
+  "sample_request": {
+    "id": 3807,
+    "name": "akhlm postman update",
+    "status": "active"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Payment plan updated",
+    "data": {
+      "id": 3807,
+      "name": "akhlm postman update",
+      "plan_token": "rpp_12d2ef3d5ac1c13b9d30",
+      "status": "active",
+      "currency": "NGN",
+      "amount": 5000,
+      "duration": 48,
+      "interval": "monthly",
+      "created_at": "2020-01-16T18:08:19.000Z"
+    }
+  }
+}

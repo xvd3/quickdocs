@@ -1,0 +1,24 @@
+{
+  "description": "Withdraw existing funds from a virtual card",
+  "endpoint": "POST /v3/virtual-cards/:id/withdraw",
+  "request_spec": {
+    "type": ["params", "post_body"],
+    "spec": [
+      {
+        "id": "Virtual card id"
+      },
+      {
+        "amount": "This is the amount to withdraw"
+      }
+    ]
+  },
+  "sample_request": {
+    "id": "38c9201a-fcb2-48fd-875e-6494ed79a6bb",
+    "amount": 500000
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Withdrawal successful",
+    "data": null
+  }
+}

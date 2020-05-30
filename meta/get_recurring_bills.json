@@ -1,0 +1,40 @@
+{
+  "description": "This meta shows you how to fetch a recurring bill payments",
+  "endpoint": "GET /v3/recurring-bills",
+  "request_spec": {
+    "type": "none"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "recurring bills request successful",
+    "data": [
+      {
+        "id": 9,
+        "unique_reference": "+2349082930030",
+        "amount": 50,
+        "date_started": "2018-09-13T12:40:32.283Z",
+        "date_stopped": null,
+        "next_run": "2018-09-13T13:40:32.283Z",
+        "recurring_type": "Hourly"
+      },
+      {
+        "id": 10,
+        "unique_reference": "+2335745602833",
+        "amount": 3,
+        "date_started": "2018-09-13T13:47:22.993Z",
+        "date_stopped": null,
+        "next_run": "2018-09-13T14:47:22.993Z",
+        "recurring_type": "Hourly"
+      },
+      {
+        "id": 11,
+        "unique_reference": "+2335745602833",
+        "amount": 10,
+        "date_started": "2018-09-13T13:47:40.137Z",
+        "date_stopped": null,
+        "next_run": "2018-09-13T14:47:40.137Z",
+        "recurring_type": "Hourly"
+      }
+    ]
+  }
+}

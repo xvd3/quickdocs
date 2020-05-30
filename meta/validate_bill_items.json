@@ -1,0 +1,30 @@
+{
+  "description": "This meta shows you how to validate services like DSTV smartcard no, Meter number etc.",
+  "endpoint": "GET /bill-items/:item_code/validate",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "item_code": "This is the code for the product to be purchased. Can be gotten from the response payload of GET /v3/bill-categories",
+      "code": "This is the biller code for the service",
+      "customer": "This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number"
+    }
+  },
+  "sample_request": "?code=BIL099&customer=08038291822",
+  "sample_response": {
+    "status": "success",
+    "message": "Item validated successfully",
+    "data": {
+      "response_code": "00",
+      "address": null,
+      "response_message": "Successful",
+      "name": "MTN",
+      "biller_code": "BIL099",
+      "customer": "08038291822",
+      "product_code": "AT099",
+      "email": null,
+      "fee": 0,
+      "maximum": 0,
+      "minimum": 0
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "description": "This allows you fetch a single subaccount using the subaccount ID",
+  "endpoint": "GET /v3/subaccounts/:id",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "This is the subaccount_id, it can be gotten in the response from crate subaccount"
+    }
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "Subaccount fetched",
+    "data": {
+      "id": 2063,
+      "account_number": "0690000039",
+      "account_bank": "044",
+      "business_name": "Sharp Guy",
+      "full_name": "Dotun Ajib",
+      "created_at": "2020-01-02T21:54:35.000Z",
+      "meta": [
+        {
+          "swift_code": ""
+        }
+      ],
+      "account_id": 86548,
+      "split_ratio": 1,
+      "split_type": "percentage",
+      "split_value": 0.6,
+      "subaccount_id": "RS_2A9D2F79274AD40924983F5BA6975336",
+      "bank_name": "ACCESS BANK NIGERIA",
+      "country": "NG"
+    }
+  }
+}

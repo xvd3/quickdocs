@@ -1,0 +1,61 @@
+{
+  "description": "This endpoint allows you to charge multiple payment tokens at once.",
+  "endpoint": "POST /v3/bulk-tokenized-charges",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "title": "Narration for the bulk charges",
+      "retry_strategy": "It is what should happen when the transaction fails. It is an object containing 3 properties (retry_interval, retry_amount_variable, retry_attempt_variable)",
+      "retry_interval": "It is the number of mins it should take for the retry to happen",
+      "retry_amount_variable": "It is the amount that would be retried after 2 attempts in percentage",
+      "retry_attempt_variable": "It is the number of times the retry should happen",
+      "bulk_data": "An array of objects containing the tokenized charge data"
+    }
+  },
+
+  "sample_request": {
+    "title": "Bulk TokenizedCharge Test",
+    "retry_strategy": {
+      "retry_interval": 120,
+      "retry_amount_variable": 60,
+      "retry_attempt_variable": 2
+    },
+    "bulk_data": [
+      {
+        "currency": "NGN",
+        "token": "flw-t1nf-53e91845cddd82c9f7113e6529e23ab7-m03w",
+        "country": "NG",
+        "amount": 200,
+        "email": "nevan@mrmail.info",
+        "first_name": "John",
+        "last_name": "Doe",
+        "ip": "190.233.222.1",
+        "tx_ref": "TEST-BULK-CH-001"
+      },
+      {
+        "currency": "NGN",
+        "token": "flw-t1nf-16215816f12c122dac659a4453c92855-m03p",
+        "country": "NG",
+        "amount": 300,
+        "email": "example@example.com",
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "ip": "190.233.222.1",
+        "tx_ref": "TEST-BULK-CH-002"
+      }
+    ]
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Bulk charge initiated",
+    "data": {
+        "id": 165,
+        "created_at": "2020-04-02T16:45:23.000Z",
+        "approver": "N/A",
+        "title": "akhlm blk tknzd chrg pstmn tst 2",
+        "total_charges": 2,
+        "pending_charges": 2,
+        "processed_charges": 0
+    }
+}
+}

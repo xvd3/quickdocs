@@ -1,0 +1,41 @@
+{
+  "description": "This meta shows you how to create bulk bills payment",
+  "endpoint": "POST /v3/bulk-bills",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "bulk_reference": "This is a reference that identifies the batch request being made for bulk requests.",
+      "callback_url": "This is an endpoint supplied by you the developer/merchant so we can send a response when each request in the bulk is completed.",
+      "bulk_data": "This is an array containing each individual requests in the batch. Please see the create single bill payment for description for  each individual request"
+    }
+  },
+  "sample_request": {
+    "bulk_reference": "edf-12de5223d2f32",
+    "callback_url": "https://webhook.site/5f9a659a-11a2-4925-89cf-8a59ea6a019a",
+    "bulk_data": [
+      {
+        "country": "NG",
+        "customer": "+23490803840303",
+        "amount": 500,
+        "recurrence": "WEEKLY",
+        "type": "AIRTIME",
+        "reference": "930049200929"
+      },
+      {
+        "country": "NG",
+        "customer": "+23490803840304",
+        "amount": 500,
+        "recurrence": "WEEKLY",
+        "type": "AIRTIME",
+        "reference": "930004912332"
+      }
+    ]
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Bulk bill Payment was queued for processing",
+    "data": {
+      "batch_reference": "CF-BATCH-FLY-API-20200310042210201008"
+    }
+  }
+}

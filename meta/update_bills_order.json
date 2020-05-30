@@ -1,0 +1,33 @@
+{
+  "description": "This meta shows you how to update the order you created using the order ID",
+  "endpoint": "PUT /v3/product-orders/:order_id",
+  "request_spec": {
+    "type": "post_body, params",
+    "spec": {
+      "params":{
+        "order_id": "This is the order id of the order you first created using this endpoint: /v3/billers/:id/products/:product_id/orders"
+      },
+      "amount": "This is the amount for the order you would like to pay for.",
+      "reference": "This is a unique reference passed by the developer to identify transactions on their end."
+    }
+  },
+  "sample_request": {
+    "amount": "3814.13",
+    "reference": "FLWTTOT1000000019"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "bills order updated successfully",
+    "data": {
+      "amount": "3787.88",
+      "order_reference": "be9c8abf-4611-46e9-85e7-5a2e8c5d7ab3",
+      "total_amount": "3814.13",
+      "meta": {
+        "rrr": "230007813086"
+      },
+      "fee": "26.25",
+      "flw_ref": "CF-FLYAPI-20200312075605138802",
+      "tx_ref": "BP15839997672012166"
+    }
+  }
+}

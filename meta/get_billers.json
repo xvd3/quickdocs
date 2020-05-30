@@ -1,0 +1,22 @@
+{
+  "description": "This meta shows you how to get all government agencies you can pay into",
+  "endpoint": "GET /v3/billers",
+  "request_spec": {
+    "type": "params"
+  },
+  "sample_request": { },
+  "sample_response": {
+    "status": "success",
+    "message": "billers retrieval successful",
+    "data": [
+      {
+        "code": "BIL136",
+        "name": "Genesis Group Payment"
+      },
+      {
+        "code": "BIL137",
+        "name": "Government Payments"
+      }
+    ]
+  }
+}

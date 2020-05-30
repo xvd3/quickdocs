@@ -1,0 +1,41 @@
+{
+  "description": "This meta shows you how to initiate a bulk transfer",
+  "endpoint": "POST /v3/bulk-transfers",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "title": "Title of the bulk tranfer",
+      "bulk_data": "Array containing individual transfer objects"
+    }
+  },
+  "sample_request": {
+    "title": "akhlm pstmn blktrnfr xx03",
+    "bulk_data": [
+      {
+        "bank_code": "044",
+        "account_numberr": "0690000032",
+        "amount": 45000,
+        "currency": "NGN",
+        "narration": "akhlm blktrnsfr",
+        "reference": "akhlm-blktrnsfr-xx03"
+      },
+      {
+        "bank_code": "044",
+        "account_number": "0690000034",
+        "amount": 5000,
+        "currency": "NGN",
+        "narration": "akhlm blktrnsfr",
+        "reference": "akhlm-blktrnsfr-xy03"
+      }
+    ]
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Bulk transfer queued",
+    "data": {
+      "id": 2013,
+      "created_at": "2020-01-20T16:36:29.000Z",
+      "approver": "N/A"
+    }
+  }
+}

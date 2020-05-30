@@ -1,0 +1,215 @@
+{
+  "description": "Fetch all transactions on your account",
+  "endpoint": "GET /v3/transactions",
+  "request_spec": {
+    "type": "params_query",
+    "spec": {
+      "from": "This is the specified date to start the list from e.g. 2018-01-01",
+      "to": "The is the specified end period for the search e.g. 2018-03-20",
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page",
+      "customer_email": "This is the email of the customer who carried out a transaction. Use for more specific listing.",
+      "status": "This is the transaction status, can be set to successful, failed etc",
+      "tx_ref": "This is the merchant reference ties to a transaction. Use for more specific searches",
+      "customer_fullname": "This is the combination of the customer first name and last name passed to rave during transaction.",
+      "currency": "This is the currency the transaction list should come in e.g. NGN, USD, EUR, GHS, KES, GBP and ZAR"
+    }
+  },
+  "sample_request": "GET /v3/transactions?from=2020-03-01&to=2020-04-01&status=successful&page=1&type=card",
+  "sample_response": {
+    "status": "success",
+    "message": "Transactions fetched",
+    "meta": {
+      "page_info": {
+        "total": 129,
+        "current_page": 1,
+        "total_pages": 13
+      }
+    },
+    "data": [
+      {
+        "id": 1198788,
+        "tx_ref": "MC-1585672879213",
+        "flw_ref": "FLW001297099",
+        "device_fingerprint": "69e6b7f0b72037aa8428b70fbe03986c",
+        "amount": 1500,
+        "currency": "NGN",
+        "charged_amount": 1500,
+        "app_fee": 623.75,
+        "merchant_fee": 0,
+        "processor_response": "APPROVED",
+        "auth_model": "VBVSECURECODE",
+        "ip": "169.123.8.9",
+        "narration": "FLW-PBF CARD Transaction ",
+        "status": "successful",
+        "payment_type": "card",
+        "created_at": "2020-03-31T16:41:26.000Z",
+        "amount_settled": null,
+        "card": {
+          "type": "MASTERCARD",
+          "country": "RUSSIAN FEDERATION RU",
+          "issuer": "MASTERCARD JSB PROBUSINESSBANK CREDITGOLD",
+          "first_6digits": "53772",
+          "last_4digits": "7450",
+          "expiry": "09/21"
+        },
+        "customer": {
+          "id": 347498,
+          "email": "user@gmail.com",
+          "phone_number": "0902620185",
+          "name": "temi desola",
+          "created_at": "2020-03-24T17:38:27.000Z"
+        },
+        "account_id": 73362,
+        "meta": {
+          "flightID": "123949494DC",
+          "trxauthorizeid": "FLW001297099",
+          "trxreference": "FLW001297099",
+          "old_amount": "10000",
+          "old_charged_amount": "10000",
+          "old_fee": "3416",
+          "old_merchant_fee": "0"
+        }
+      },
+      {
+        "id": 1198585,
+        "tx_ref": "MC-158523s09v5050e8",
+        "flw_ref": "flwm3s4m0c1585669487893",
+        "device_fingerprint": "62wd23423rq324323qew1",
+        "amount": 300,
+        "currency": "RWF",
+        "charged_amount": 300,
+        "app_fee": 1286.6,
+        "merchant_fee": 0,
+        "processor_response": "Approved",
+        "auth_model": "MOBILEMONEY",
+        "ip": "154.123.220.1",
+        "narration": "Kizito Akhilome",
+        "status": "successful",
+        "payment_type": "mobilemoneyrw",
+        "created_at": "2020-03-31T15:44:46.000Z",
+        "amount_settled": 0,
+        "customer": {
+          "id": 349061,
+          "email": "johnmadakin@gmail.com",
+          "phone_number": "054709929220",
+          "name": "John Madakin",
+          "created_at": "2020-03-27T09:12:54.000Z"
+        },
+        "account_id": 73362,
+        "meta": {
+          "matric_no": "0831"
+        }
+      },
+      {
+        "id": 1198576,
+        "tx_ref": "MC-158523s09v5050e8",
+        "flw_ref": "flwm3s4m0c1585669211737",
+        "device_fingerprint": "62wd23423rq324323qew1",
+        "amount": 300,
+        "currency": "GHS",
+        "charged_amount": 300,
+        "app_fee": 88.39,
+        "merchant_fee": 0,
+        "processor_response": "Approved",
+        "auth_model": "MOBILEMONEY",
+        "ip": "154.123.220.1",
+        "narration": "Kizito Akhilome",
+        "status": "successful",
+        "payment_type": "mobilemoneygh",
+        "created_at": "2020-03-31T15:40:10.000Z",
+        "amount_settled": 211.61,
+        "customer": {
+          "id": 349061,
+          "email": "johnmadakin@gmail.com",
+          "phone_number": "054709929220",
+          "name": "John Madakin",
+          "created_at": "2020-03-27T09:12:54.000Z"
+        },
+        "account_id": 73362,
+        "meta": {
+          "matric_no": "0831"
+        }
+      },
+      {
+        "id": 1198313,
+        "tx_ref": "khlm-1585658847679",
+        "flw_ref": "FLW001297074",
+        "device_fingerprint": "69e6b7f0b72037ddsa3289017fdbe03986c",
+        "amount": 10000,
+        "currency": "NGN",
+        "charged_amount": 10000,
+        "app_fee": 3416,
+        "merchant_fee": 0,
+        "processor_response": "APPROVED",
+        "auth_model": "VBVSECURECODE",
+        "ip": "::ffff:127.0.0.1",
+        "narration": "FLW-PBF CARD Transaction ",
+        "status": "successful",
+        "payment_type": "card",
+        "created_at": "2020-03-31T12:47:31.000Z",
+        "amount_settled": null,
+        "card": {
+          "type": "MASTERCARD",
+          "country": "RUSSIAN FEDERATION RU",
+          "issuer": "MASTERCARD JSB PROBUSINESSBANK CREDITGOLD",
+          "first_6digits": "53772",
+          "last_4digits": "7450",
+          "expiry": "09/21"
+        },
+        "customer": {
+          "id": 347943,
+          "email": "user@gmail.com",
+          "phone_number": "0902620185",
+          "name": "munotor sarkis",
+          "created_at": "2020-03-25T10:20:50.000Z"
+        },
+        "account_id": 73362,
+        "meta": {
+          "artiste": "logic",
+          "trxauthorizeid": "FLW001297074",
+          "trxreference": "FLW001297074"
+        }
+      },
+      {
+        "id": 1198280,
+        "tx_ref": "khlm-1585657941041",
+        "flw_ref": "FLW001297071",
+        "device_fingerprint": "69e6b7f0b72037ddsa3289017fdbe03986c",
+        "amount": 10000,
+        "currency": "NGN",
+        "charged_amount": 10000,
+        "app_fee": 3416,
+        "merchant_fee": 0,
+        "processor_response": "APPROVED",
+        "auth_model": "VBVSECURECODE",
+        "ip": "::ffff:127.0.0.1",
+        "narration": "FLW-PBF CARD Transaction ",
+        "status": "successful",
+        "payment_type": "card",
+        "created_at": "2020-03-31T12:32:27.000Z",
+        "amount_settled": null,
+        "card": {
+          "type": "MASTERCARD",
+          "country": "RUSSIAN FEDERATION RU",
+          "issuer": "MASTERCARD JSB PROBUSINESSBANK CREDITGOLD",
+          "first_6digits": "53772",
+          "last_4digits": "7450",
+          "expiry": "09/21"
+        },
+        "customer": {
+          "id": 347943,
+          "email": "user@gmail.com",
+          "phone_number": "0902620185",
+          "name": "munotor sarkis",
+          "created_at": "2020-03-25T10:20:50.000Z"
+        },
+        "account_id": 73362,
+        "meta": {
+          "artiste": "logic",
+          "trxauthorizeid": "FLW001297071",
+          "trxreference": "FLW001297071"
+        }
+      }
+    ]
+  }
+}

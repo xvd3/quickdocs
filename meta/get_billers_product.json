@@ -1,0 +1,35 @@
+{
+  "description": "This meta shows you how to get all products under a government agency.",
+  "endpoint": "GET /billers/:id/products",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "This is the biller's code"
+    }
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "billers products retrieval successful",
+    "data": {
+      "biller_code": "BIL136",
+      "meta": null,
+      "products": [
+        {
+          "amount": "0.0",
+          "code": "OT150",
+          "fee": "0.0",
+          "name": "GENESIS GROUP ACCOMODATION",
+          "description": "GENESIS GROUP ACCOMODATION PAYMENT"
+        },
+        {
+          "amount": "0.0",
+          "code": "OT151",
+          "fee": "0.0",
+          "name": "GENESIS GROUP COLLEGE GRADUATION FEES",
+          "description": "GENESIS GROUP COLLEGE GRADUATION FEES"
+        }
+      ]
+    }
+  }
+}

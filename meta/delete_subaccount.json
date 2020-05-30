@@ -1,0 +1,16 @@
+{
+  "description": "This shows you how to delete a subaccount",
+  "endpoint": "DELETE /v3/subaccounts/:id",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "Subaccount id returned when subaccount was created"
+    }
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "Subaccount deleted",
+    "data": null
+  }
+}

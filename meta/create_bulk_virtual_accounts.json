@@ -1,0 +1,32 @@
+{
+  "description": "This meta shows you how to create bulk virtual nubans",
+  "endpoint": "POST /v3/bulk-virtual-account-numbers",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "accounts": "This is the number of virtual nubans you want to Generate",
+      "email": "This could be a generic email address",
+      "is_permanent": "This allows you create a static account number i.e. it doesn't expire",
+      "duration": "This is represented in days e.g. passing 2 means 2 days. It is the expiry date for the account number. ",
+      "frequency": "This is the number of times a generated account number can receive payments.",
+      "tx_ref": "This is a transaction reference that would be returned each time a transfer is done to the account.",
+      "amount": "The desired amount to be collected"
+    }
+  },
+  "sample_request": {
+    "accounts": 2,
+    "email": "d@t.com",
+    "is_permanent": true,
+    "tx_ref": "jhn-mndkn-0192383902"
+  },
+
+  "sample_response": {
+    "status": "success",
+    "message": "Bulk virtual accounts creation queued",
+    "data": {
+      "batch_id": "-RND_2581579270759689",
+      "response_code": "02",
+      "response_message": "Request added to Queue"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Cancel an existing payment plan",
+  "endpoint": "PUT /v3/payment-plans/:id/cancel",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "payment plan id"
+    }
+  },
+  "sample_request": {
+    "id": 3807
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Payment plan cancelled",
+    "data": {
+      "id": 3807,
+      "name": "the akhlm postman plan 2",
+      "plan_token": "rpp_12d2ef3d5ac1c13b9d30",
+      "status": "cancelled",
+      "currency": "NGN",
+      "amount": 5000,
+      "duration": 48,
+      "interval": "monthly",
+      "created_at": "2020-01-16T18:08:19.000Z"
+    }
+  }
+}

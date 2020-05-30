@@ -1,0 +1,129 @@
+{
+  "description": "Fetch all payment plans on your account",
+  "endpoint": "GET /v3/payment-plans",
+  "request_spec": {},
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "Payment plans fetched",
+    "meta": {
+      "page_info": {
+        "total": 11,
+        "current_page": 1,
+        "total_pages": 2
+      }
+    },
+    "data": [
+      {
+        "id": 3809,
+        "name": "akhlm postman updated",
+        "amount": 0,
+        "interval": "daily",
+        "duration": 0,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_59072efa415936a5cfbf",
+        "created_at": "2020-01-16T18:10:32.000Z"
+      },
+      {
+        "id": 3808,
+        "name": "N/A",
+        "amount": 5000,
+        "interval": "daily",
+        "duration": 0,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_e8b0c18d665d849f033b",
+        "created_at": "2020-01-16T18:10:22.000Z"
+      },
+      {
+        "id": 3807,
+        "name": "akhlm postman update",
+        "amount": 5000,
+        "interval": "monthly",
+        "duration": 48,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_12d2ef3d5ac1c13b9d30",
+        "created_at": "2020-01-16T18:08:19.000Z"
+      },
+      {
+        "id": 3806,
+        "name": "the akhlm postman plan",
+        "amount": 5000,
+        "interval": "weekly",
+        "duration": 52,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_25f3bbeae9333211dd35",
+        "created_at": "2020-01-16T18:05:01.000Z"
+      },
+      {
+        "id": 3772,
+        "name": "The Kizito Postman Plan 2",
+        "amount": 5000,
+        "interval": "weekly",
+        "duration": 52,
+        "status": "cancelled",
+        "currency": "NGN",
+        "plan_token": "rpp_d2f295acd1970438f822",
+        "created_at": "2020-01-14T05:43:48.000Z"
+      },
+      {
+        "id": 3771,
+        "name": "The Kizito Postman Plan",
+        "amount": 5000,
+        "interval": "monthly",
+        "duration": 12,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_3e0968c64209b7a0f25c",
+        "created_at": "2020-01-14T05:42:57.000Z"
+      },
+      {
+        "id": 3700,
+        "name": "The Kizito Plan",
+        "amount": 2000,
+        "interval": "monthly",
+        "duration": 12,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_93fef9f31f7b6abb5882",
+        "created_at": "2020-01-10T13:29:46.000Z"
+      },
+      {
+        "id": 3699,
+        "name": "N/A",
+        "amount": 0,
+        "interval": "daily",
+        "duration": 0,
+        "status": "cancelled",
+        "currency": "NGN",
+        "plan_token": "rpp_93d443ad355b5efb4fe3",
+        "created_at": "2020-01-10T13:28:47.000Z"
+      },
+      {
+        "id": 3698,
+        "name": "The Kizito Editted",
+        "amount": 0,
+        "interval": "daily",
+        "duration": 0,
+        "status": "cancelled",
+        "currency": "NGN",
+        "plan_token": "rpp_f1ef76170b1a7bc1110b",
+        "created_at": "2020-01-10T13:28:13.000Z"
+      },
+      {
+        "id": 3657,
+        "name": "akhlm-stag",
+        "amount": 2000,
+        "interval": "hourly",
+        "duration": 4,
+        "status": "active",
+        "currency": "NGN",
+        "plan_token": "rpp_fed796f8be1f5469a41f",
+        "created_at": "2019-12-31T16:51:28.000Z"
+      }
+    ]
+  }
+}

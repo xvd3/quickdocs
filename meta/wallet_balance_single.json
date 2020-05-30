@@ -1,0 +1,22 @@
+{
+  "description": "Get wallet balance for specific currency",
+  "endpoint": "GET /v3/balances/:currency",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "currency": "Target wallet currency to fetch balance for"
+    }
+  },
+  "sample_request": {
+    "currency": "NGN"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Wallet balance fetched",
+    "data": {
+      "currency": "NGN",
+      "available_balance": 2349340,
+      "ledger_balance": 257125.82
+    }
+  }
+}

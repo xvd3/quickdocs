@@ -1,0 +1,90 @@
+{
+  "description": "Get all wallet balances",
+  "endpoint": "GET /v3/balances",
+  "request_spec": {
+    "type": "",
+    "spec": {}
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "Wallet balances fetched",
+    "data": [
+      {
+        "currency": "NGN",
+        "available_balance": 2349340,
+        "ledger_balance": 257125.82
+      },
+      {
+        "currency": "KES",
+        "available_balance": 0,
+        "ledger_balance": 1226.72
+      },
+      {
+        "currency": "GHS",
+        "available_balance": 0,
+        "ledger_balance": 5000
+      },
+      {
+        "currency": "USD",
+        "available_balance": 0,
+        "ledger_balance": 472.08
+      },
+      {
+        "currency": "EUR",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "ZAR",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "GBP",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "TZS",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "UGX",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "RWF",
+        "available_balance": 0,
+        "ledger_balance": 5000
+      },
+      {
+        "currency": "ZMW",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "INR",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "XOF",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "MUR",
+        "available_balance": 0,
+        "ledger_balance": 0
+      },
+      {
+        "currency": "ETB",
+        "available_balance": 0,
+        "ledger_balance": 0
+      }
+    ]
+  }
+}

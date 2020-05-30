@@ -1,0 +1,37 @@
+{
+  "description": "This allows you initiate a transaction refund",
+  "endpoint": "POST /v3/refunds",
+  "request_spec": {
+    "type": ["params", "post_body"],
+    "spec": [
+      {
+        "flw_ref": "This is the flw_ref returned in the charge response"
+      },
+      {
+        "amount": "This is an optional parameter and should be sent if you would like to refund a partial amount"
+      }
+    ]
+  },
+  "sample_request": {
+    "flw_ref": "URF_1577867664541_3572735",
+    "amount": 5000
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Transaction refund initiated",
+    "data": {
+      "id": 8612,
+      "account_id": 73362,
+      "tx_id": 908790,
+      "flw_ref": "URF_1577867664541_3572735",
+      "wallet_id": 74639,
+      "amount_refunded": 5000,
+      "status": "completed",
+      "destination": "payment_source",
+      "meta": {
+        "source": "availablebalance"
+      },
+      "created_at": "2020-01-24T09:18:37.366Z"
+    }
+  }
+}

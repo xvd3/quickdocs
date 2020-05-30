@@ -1,0 +1,187 @@
+{
+  "description": "View Transaction Timeline",
+  "endpoint": "GET /v3/transactions/:id/events",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "This is the transaction ID"
+    }
+  },
+  "sample_request": {
+    "id": "957764"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Transaction events fetched",
+    "data": [
+      {
+        "note": "Loaded modal https://raveappv2.herokuapp.com/pay/akhlm",
+        "actor": "h0vkard@flw.ext",
+        "object": "modal",
+        "action": "loaded",
+        "context": "web",
+        "created_at": "2019-12-13T22:09:57.997Z"
+      },
+      {
+        "note": "Switched to Pay with Bank Option",
+        "actor": "h0vkard@flw.ext",
+        "object": "modal",
+        "action": "switched",
+        "context": "web",
+        "created_at": "2019-12-13T22:09:58.001Z"
+      },
+      {
+        "note": "Pay button clicked",
+        "actor": "h0vkard@flw.ext",
+        "object": "MODAL",
+        "action": "click",
+        "context": "web",
+        "created_at": "2019-12-13T22:09:56.903Z"
+      },
+      {
+        "note": "IP Resolved 197.210.29.248",
+        "actor": "h0vkard@flw.ext",
+        "object": "IP",
+        "action": "request",
+        "context": "web",
+        "created_at": "2019-12-13T22:09:59.595Z"
+      },
+      {
+        "note": "Switched to Pay with Card Option",
+        "actor": "h0vkard@flw.ext",
+        "object": "modal",
+        "action": "switched",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:00.314Z"
+      },
+      {
+        "note": "Entering Card Number",
+        "actor": "h0vkard@flw.ext",
+        "object": "Card Number",
+        "action": "typing",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:03.505Z"
+      },
+      {
+        "note": "Stopped entering Card Number",
+        "actor": "h0vkard@flw.ext",
+        "object": "Card Number",
+        "action": "typing",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:04.522Z"
+      },
+      {
+        "note": "Entering Expiry",
+        "actor": "h0vkard@flw.ext",
+        "object": "Expiry",
+        "action": "typing",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:04.523Z"
+      },
+      {
+        "note": "Entering CVV",
+        "actor": "h0vkard@flw.ext",
+        "object": "CVV",
+        "action": "typing",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:06.595Z"
+      },
+      {
+        "note": "Stopped entering Expiry",
+        "actor": "h0vkard@flw.ext",
+        "object": "Expiry",
+        "action": "typing",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:06.593Z"
+      },
+      {
+        "note": "Stopped entering CVV",
+        "actor": "h0vkard@flw.ext",
+        "object": "CVV",
+        "action": "typing",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:12.412Z"
+      },
+      {
+        "note": "Attempting card charge request",
+        "actor": "h0vkard@flw.ext",
+        "object": "CREDIT_CARD",
+        "action": "charge",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:12.530Z"
+      },
+      {
+        "note": "Submitted Payment Details",
+        "actor": "h0vkard@flw.ext",
+        "object": "payment details:credit_card",
+        "action": "submitted",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:12.529Z"
+      },
+      {
+        "note": "card charge request successful: request for PIN",
+        "actor": "h0vkard@flw.ext",
+        "object": "CREDIT_CARD",
+        "action": "charge",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:14.097Z"
+      },
+      {
+        "note": "Attempting card charge request",
+        "actor": "h0vkard@flw.ext",
+        "object": "CREDIT_CARD",
+        "action": "charge",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:19.209Z"
+      },
+      {
+        "note": "Card charge taking too long. Polling for response",
+        "actor": "h0vkard@flw.ext",
+        "object": "LONG_REQUEST",
+        "action": "charge",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:23.880Z"
+      },
+      {
+        "note": "card charge request successful: request for OTP",
+        "actor": "h0vkard@flw.ext",
+        "object": "CREDIT_CARD",
+        "action": "charge",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:25.263Z"
+      },
+      {
+        "note": "Attempting to validate card charge",
+        "actor": "h0vkard@flw.ext",
+        "object": "CARD_CHARGE",
+        "action": "validate",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:31.630Z"
+      },
+      {
+        "note": "Validate card charge request complete",
+        "actor": "h0vkard@flw.ext",
+        "object": "CARD_CHARGE",
+        "action": "validate",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:33.146Z"
+      },
+      {
+        "note": "Transaction Completed!",
+        "actor": "h0vkard@flw.ext",
+        "object": "TRANSACTION",
+        "action": "completion",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:33.151Z"
+      },
+      {
+        "note": "Validate card charge successful",
+        "actor": "h0vkard@flw.ext",
+        "object": "CARD_CHARGE",
+        "action": "validate",
+        "context": "web",
+        "created_at": "2019-12-13T22:10:33.147Z"
+      }
+    ]
+  }
+}

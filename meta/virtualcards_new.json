@@ -1,0 +1,56 @@
+{
+  "description": "Create a virtual card",
+  "endpoint": "POST /v3/virtual-cards",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "currency": "This is the currency the card would be denominated in",
+      "amount": "This is the amount to prefund the card with on card creation",
+      "billing_name": "This is the Name on the card",
+      "billing_address": "This is the registered address for the card. e.g. Your house address where you would receive your card statements",
+      "billing_city": "This is the City / District / Suburb / Town / Village. registered for the card",
+      "billing_state": "This is the State / County / Province / Region",
+      "billing_postal_code": "ZIP or postal code",
+      "billing_country": "Billing address country code, if provided. (e.g. \"NG\", \"US\")",
+      "callback_url": "This is a callback endpoint you provide where we send actions that happen on a card such as a card being charged, a card being terminated etc"
+    }
+  },
+  "sample_request": {
+    "currency": "NGN",
+    "amount": 20000,
+    "billing_name": "Jermaine Graham",
+    "billing_address": "2014 Forest Hills Drive",
+    "billing_city": "Node",
+    "billing_state": "Javascript",
+    "billing_postal_code": "000009",
+    "billing_country": "NG",
+    "callback_url": "https://your-callback-url.com/"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Card created successfully",
+    "data": {
+      "id": "43ec6e92-9eb7-48ad-91c8-7bee425a33cf",
+      "account_id": 65637,
+      "amount": "20,000.00",
+      "currency": "NGN",
+      "card_hash": "43ec6e92-9eb7-48ad-91c8-7bee425a33cf",
+      "card_pan": "5366130699778900",
+      "masked_pan": "536613*******8900",
+      "city": "Lekki",
+      "state": "Lagos",
+      "address_1": "19, Olubunmi Rotimi",
+      "address_2": null,
+      "zip_code": "23401",
+      "cvv": "134",
+      "expiration": "2023-01",
+      "send_to": null,
+      "bin_check_name": null,
+      "card_type": "mastercard",
+      "name_on_card": "Jermaine Graham",
+      "created_at": "2020-01-17T18:33:29.0130255+00:00",
+      "is_active": true,
+      "callback_url": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Activate a subscription",
+  "endpoint": "PUT /v3/subscriptions/:id/activate",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "subscription id"
+    }
+  },
+  "sample_request": {
+    "id": 4147
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Subscription activated",
+    "data": {
+      "id": 4147,
+      "amount": 2000,
+      "customer": {
+        "id": 247546,
+        "customer_email": "h0vkard@flw.ext"
+      },
+      "plan": 3657,
+      "status": "active",
+      "created_at": "2019-12-31T17:00:55.000Z"
+    }
+  }
+}

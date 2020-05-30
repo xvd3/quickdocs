@@ -1,0 +1,24 @@
+{
+  "description": "Resend a failed webhook to your server",
+  "endpoint": "POST /v3/transactions/:tx_ref/resend-hook",
+  "request_spec": {
+    "type": ["params", "params_query"],
+    "spec": [
+      {
+        "tx_ref": "This is the merchant unique transaction reference"
+      },
+      {
+        "wait": "If this is passed the endpoint would hold for the hook response and return what you respond with as the response. the expected value is 1"
+      }
+    ]
+  },
+  "sample_request": {
+    "tx_ref": "akhilome-1577988562446",
+    "wait": 1
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "hook sent successfully",
+    "data": null
+  }
+}

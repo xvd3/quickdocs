@@ -1,0 +1,65 @@
+{
+  "description": "This endpoint allows you to get bulk tokenize charge",
+  "endpoint": "GET /v3/bulk-tokenized-charges/:bulk_id",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "bulk_id": "This is the id returned in the bulk charge response."
+    }
+  },
+  "sample_request": {
+    "bulk_id": 131
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Bulk charge fetched",
+    "data": [
+      {
+        "id": 1017001,
+        "tx_ref": "akhlm-pstmn-blkchrge-xx6",
+        "flw_ref": "FLW-M03K-bbd148a9569b709882da8437e123ba61",
+        "device_fingerprint": "N/A",
+        "amount": 3000,
+        "currency": "NGN",
+        "charged_amount": 3042,
+        "app_fee": 42,
+        "merchant_fee": 0,
+        "processor_response": "Approved",
+        "auth_model": "noauth",
+        "ip": "pstmn",
+        "narration": "Jane Wu",
+        "status": "successful",
+        "payment_type": "card",
+        "created_at": "2020-01-19T21:46:30.000Z",
+        "customer_name": "Kendrick Graham",
+        "customer_email": "user@example.com",
+        "account_id": 73362,
+        "batch_id": 131,
+        "amount_settled": 3000
+      },
+      {
+        "id": 1017000,
+        "tx_ref": "akhlm-pstmn-blkchrg-xx6",
+        "flw_ref": "FLW-M03K-7544dc8d157ca763bbcf864a24906f93",
+        "device_fingerprint": "N/A",
+        "amount": 3500,
+        "currency": "NGN",
+        "charged_amount": 3549,
+        "app_fee": 49,
+        "merchant_fee": 0,
+        "processor_response": "Approved",
+        "auth_model": "noauth",
+        "ip": "pstmn",
+        "narration": "Jane Wu",
+        "status": "successful",
+        "payment_type": "card",
+        "created_at": "2020-01-19T21:46:29.000Z",
+        "customer_name": "Kendrick Graham",
+        "customer_email": "user@example.com",
+        "account_id": 73362,
+        "batch_id": 131,
+        "amount_settled": 3500
+      }
+    ]
+  }
+}

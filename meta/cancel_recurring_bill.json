@@ -1,0 +1,17 @@
+{
+  "description": "This meta shows you how to cancel recurring Airtime and DSTV bill services",
+  "endpoint": "PUT /v3/recurring-bills/:id",
+  "request_spec": {
+    "type": "put_body params",
+    "spec": {
+      "params": {
+        "id": "id of the recurring payment to be cancelled."
+      },
+      "customer": "This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number"
+    }
+  },
+  "sample_request": {
+    "customer": "+23490803840303"
+  },
+  "sample_response": {}
+}

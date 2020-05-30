@@ -1,0 +1,57 @@
+{
+  "description": "This shows you how to validate a pending transaction",
+  "endpoint": "POST /v3/validate-charge",
+  "request_spec": {
+    "type": "post_body",
+    "spec": {
+      "public_key": "Required - true: This is a unique key generated for each button created on Rave’s dashboard. It starts with a prefix FLWPUBK and ends with suffix X.",
+      "otp": "Required - true: This is a random 6 character number sent to customers phone number",
+      "flw_key": "Required - true: This is the provider reference",
+      "type": "Required - false: Set to account if you want to validate an account transaction and set to card for card transactions"
+    }
+  },
+  "sample_request": {
+    "public_key": "FLWPUBK-db4a8d5ebe308c5e15ec95976ceddd14-X",
+    "otp": "12345",
+    "flw_ref": "FLW-MOCK-856cc923cf8cc750d4df4802c17b7be1",
+    "type": "account"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Charge validated",
+    "data": {
+      "id": 1191404,
+      "tx_ref": "MC-1585230ew9v5050e8",
+      "flw_ref": "URF_1585326278774_6262435",
+      "device_fingerprint": "62wd23423rq324323qew1",
+      "amount": 100,
+      "charged_amount": 100,
+      "app_fee": 1247.2,
+      "merchant_fee": 0,
+      "auth_model": "AUTH",
+      "currency": "NGN",
+      "ip": "154.123.220.1",
+      "narration": "Software Engineering as a service",
+      "status": "successful",
+      "auth_url": "NO-URL",
+      "payment_type": "account",
+      "fraud_status": "ok",
+      "created_at": "2020-03-27T16:24:38.000Z",
+      "account_id": 74843,
+      "customer": {
+        "id": 349094,
+        "phone_number": "0902620185",
+        "name": "John Madakin",
+        "email": "johnmadakin@gmail.com",
+        "created_at": "2020-03-27T10:05:49.000Z"
+      },
+      "account": {
+        "account_number": "0690000040",
+        "bank_code": "044",
+        "first_name": "Dele Moruf",
+        "last_name": "Quadri"
+      },
+      "processor_response": "Approved Or Completed Successfully"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "description": "Fund an existing virtual card on your account",
+  "endpoint": "POST /v3/virtual-cards/:id/fund",
+  "request_spec": {
+    "type": ["params", "post_body"],
+    "spec": [
+      {
+        "id": "The virtual card id"
+      },
+      {
+        "amount": "This is the amount you want to fund the card. The amount would be in the card currency",
+        "debit_currency": "Use this if you want to debit a different balance on Rave to fund your card e.g. you are funding a USD card but you want to debit your NGN balance to fund the card"
+      }
+    ]
+  },
+  "sample_request": {
+    "id": "38c9201a-fcb2-48fd-875e-6494ed79a6bb",
+    "amount": 400000,
+    "debit_currency": "NGN"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Card funded successfully",
+    "data": null
+  }
+}

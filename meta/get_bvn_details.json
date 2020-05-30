@@ -1,0 +1,38 @@
+{
+  "description": "This allows you to fetch bvn information",
+  "endpoint": "GET /v3/kyc/bvns/:bvn",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "bvn": "This is a valid bvn number"
+    }
+  },
+  "sample_request": {
+    "bvn": "012345678910"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "BVN details fetched",
+    "data": {
+      "bvn": "012345678910",
+      "first_name": "Wendy",
+      "middle_name": "Chucky",
+      "last_name": "Rhoades",
+      "date_of_birth": "01-01-1905",
+      "phone_number": "08012345678",
+      "registration_date": "01-01-1921",
+      "enrollment_bank": "044",
+      "enrollment_branch": "Idejo",
+      "image_base_64": null,
+      "address": null,
+      "gender": "Male",
+      "email": null,
+      "watch_listed": null,
+      "nationality": "Nigerian",
+      "marital_status": null,
+      "state_of_residence": null,
+      "lga_of_residence": null,
+      "image": null
+    }
+  }
+}

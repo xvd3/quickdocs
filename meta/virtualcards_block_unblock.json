@@ -1,0 +1,20 @@
+{
+  "description": "Block/Unblock a virtual card",
+  "endpoint": "PUT /v3/virtual-cards/:id/status/:status",
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "id": "Virtual card id",
+      "status": "This is the action to perform on the card, possible parameters are \"block\" and \"unblock\""
+    }
+  },
+  "sample_request": {
+    "id": "38c9201a-fcb2-48fd-875e-6494ed79a6bb    ",
+    "status": "block"
+  },
+  "sample_response": {
+    "status": "success",
+    "message": "Card freeze successful",
+    "data": null
+  }
+}

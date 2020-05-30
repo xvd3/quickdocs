@@ -1,0 +1,27 @@
+{
+  "description": "Get transaction fees",
+  "endpoint": "GET /v3/transactions/fee",
+  "request_spec": {
+    "type": "params_query",
+    "spec": {
+      "amount": "[Required] This is the amount of the product or service to charged from the customer",
+      "currency": "[Required] This is the specified currency to charge",
+      "public_key": "[Required] Merchant public key. Retrievable from the Flutterwave dashboard",
+      "p_type": "This is an optional parameter to be used when the payment type is account payment. A value of 2 is to be passed to the endpoint",
+      "card_6": "This can be used only when the user has entered first 6digits of their card number, it also helps determine international fees on the transaction if the card being used is an international card"
+    }
+  },
+  "sample_request": "GET /v3/transactions/fee?public_key={{PUB_KEY}}&amount=10000&currency=UGX",
+  "sample_response": {
+    "status": "success",
+    "message": "Charged fee",
+    "data": {
+      "charge_amount": 10000,
+      "fee": 215,
+      "merchant_fee": 75,
+      "flutterwave_fee": 140,
+      "stamp_duty_fee": 0,
+      "currency": "UGX"
+    }
+  }
+}
