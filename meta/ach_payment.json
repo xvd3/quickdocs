@@ -22,7 +22,7 @@
   },
   "sample_request": {
     "public_key": "FLWPUBK-db4a8d5ebe308c5e15ec95976ceddd14-X",
-    "tx_ref": "MC-1585230ew9v5050e8",
+    "tx_ref": "MC-1585230ew9v5050e8rchars",
     "amount": "100",
     "type": "ach_payment",
     "currency": "USD",
@@ -42,7 +42,7 @@
     "message": "Charge initiated",
     "data": {
       "id": 1190657,
-      "tx_ref": "MC-15852309v5050e8",
+      "tx_ref": "MC-15852309v5050e8we",
       "flw_ref": "FLW751551585302175553",
       "device_fingerprint": "62wd23423rq324323qew1",
       "amount": 100,
