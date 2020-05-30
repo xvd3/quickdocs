@@ -61,7 +61,7 @@
       "charge_type": "normal",
       "created_at": "2020-03-27T09:42:54.000Z",
       "account_id": 73362,
-      "redirect_url": "http://johnmadakin.com/u/payment-completed",
+      "redirect_url": "http://johnmadakin.com/u/payment-completed/",
       "customer": {
         "id": 349079,
         "phone_number": "0902620185",
