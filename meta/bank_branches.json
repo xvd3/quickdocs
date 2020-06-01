@@ -1,20 +1,20 @@
 {
   "description": "Get list of bank branches",
-  "endpoint": "GET /v3/banks/:id/branches",
+  "endpoint": "GET /banks/:id/branches",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "params_query"],
     "spec": [
       {
-        "id": "Bank id – gotten from hitting GET /banks/:country"
-      },
-      {
-        "public_key": "merchant public key"
+        "id": "Bank id – gotten from the banks listing endpoint - GET /banks/:country"
       }
     ]
   },
   "sample_request": {
-    "id": "280",
-    "public_key": "FLWPUBK-6c4xxxxxxxxxxd44f907c9xxxxxxxxxx-X"
+    "id": "280"
   },
   "sample_response": {
     "status": "success",

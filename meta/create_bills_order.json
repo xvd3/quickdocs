@@ -1,8 +1,12 @@
 {
   "description": "This meta shows you how to create an order using the biller code and the product Id",
-  "endpoint": "POST /v3/billers/:id/products/:product_id/orders",
+  "endpoint": "POST /billers/:id/products/:product_id/orders",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
-    "type": "post_body",
+    "type": ["post_body", "params_query"],
     "spec": {
       "country": "This is the country attached to the service being bought e.g. if Service is Airtime and country is NG it means you are buying airtime in Nigeria.",
       "customer": "This is an object with the name, email and phone number of the customer.",

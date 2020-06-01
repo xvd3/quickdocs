@@ -1,15 +1,19 @@
 {
-  "description": "This meta shows you how to create an bill payments",
-  "endpoint": "POST /v3/bills",
+  "description": "This meta shows you how to create bill payments",
+  "endpoint": "POST /bills",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "country": "This is the country attached to the service being bought e.g. if Service is Airtime and country is NG it means you are buying airtime in Nigeria.",
-      "customer": "This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number",
-      "amount": "This is the amount for the service you would like to buy.",
-      "recurrence": "This determines if you are buying a service recurrently or not. ONCE - This is a one time payment, HOURLY - This is an hourly payment, DAILY - This is a daily payment, WEEKLY - This is a weekly payment, MONTHLY - This is a monthly payment.",
-      "type": "Pass the following possible values based on the service being bought: AIRTIME, DSTV, DSTV BOX OFFICE.",
-      "reference": "This is a unique reference passed by the developer to identify transactions on their end."
+      "country": "Required - true: This is the country attached to the service being bought e.g. if Service is Airtime and country is NG it means you are buying airtime in Nigeria.",
+      "customer": "Required - true: This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number",
+      "amount": "Required - true: This is the amount for the service you would like to buy.",
+      "recurrence": "Required - true: This determines if you are buying a service recurrently or not. ONCE - This is a one time payment, HOURLY - This is an hourly payment, DAILY - This is a daily payment, WEEKLY - This is a weekly payment, MONTHLY - This is a monthly payment.",
+      "type": "Required - true: Pass the following possible values based on the service being bought: AIRTIME, DSTV, DSTV BOX OFFICE.",
+      "reference": "Required - false: This is a unique reference passed by the developer to identify transactions on their end."
     }
   },
   "sample_request": {
