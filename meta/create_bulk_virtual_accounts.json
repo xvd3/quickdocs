@@ -1,6 +1,6 @@
 {
   "description": "This meta shows you how to create bulk virtual nubans",
-  "endpoint": "POST /v3/bulk-virtual-account-numbers",
+  "endpoint": "POST /bulk-virtual-account-numbers",
   "request_spec": {
     "type": "post_body",
     "spec": {
