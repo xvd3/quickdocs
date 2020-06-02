@@ -1,6 +1,10 @@
 {
   "description": "Create a virtual card",
   "endpoint": "POST /v3/virtual-cards",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {

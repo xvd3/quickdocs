@@ -1,6 +1,10 @@
 {
   "description": "This meta shows you how to get the status of a bill purchase.",
   "endpoint": "GET /v3/bills:reference",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

@@ -1,6 +1,10 @@
 {
   "description": "This meta describes how to collect payments via Ghana mobile money.",
   "endpoint": "POST /v3/charges",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {

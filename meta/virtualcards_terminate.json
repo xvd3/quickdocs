@@ -1,6 +1,10 @@
 {
   "description": "Terminate an existing virtual card",
   "endpoint": "PUT /v3/virtual-cards/:id/terminate",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

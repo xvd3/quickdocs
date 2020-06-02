@@ -1,6 +1,10 @@
 {
   "description": "This meta shows you how to create bulk virtual nubans",
   "endpoint": "POST /bulk-virtual-account-numbers",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {

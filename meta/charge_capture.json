@@ -1,6 +1,10 @@
 {
   "description": "This allows a merchant to capture or collect the preauthorised funds from the customer i.e. after value or service has been given to the customer a merchant would capture the preauthorised amount",
   "endpoint": "POST /v3/charges/:flw_ref/capture",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": [
       "params",

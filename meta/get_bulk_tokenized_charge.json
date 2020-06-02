@@ -1,6 +1,10 @@
 {
   "description": "This endpoint allows you to get bulk tokenize charge",
   "endpoint": "GET /v3/bulk-tokenized-charges/:bulk_id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

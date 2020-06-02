@@ -1,6 +1,10 @@
 {
   "description": "This meta shows you how to get all products under a government agency.",
   "endpoint": "GET /billers/:id/products",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

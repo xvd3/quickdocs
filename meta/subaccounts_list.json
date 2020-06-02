@@ -1,6 +1,10 @@
 {
   "description": "This allows you to list all or specific subaccounts.",
   "endpoint": "GET /v3/subaccounts",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {

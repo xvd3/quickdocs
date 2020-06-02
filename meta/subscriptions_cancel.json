@@ -1,6 +1,10 @@
 {
   "description": "Cancel a subscription",
   "endpoint": "PUT /v3/subscriptions/:id/cancel",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

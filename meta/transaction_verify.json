@@ -1,6 +1,10 @@
 {
   "description": "Verify transaction using merchant transaction reference",
   "endpoint": "GET /v3/transactions/:tx_ref/verify",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

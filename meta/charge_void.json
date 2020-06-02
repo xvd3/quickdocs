@@ -1,6 +1,10 @@
 {
   "description": "This allows the merchant to release the hold on the funds i.e. if value was not given for the service, the merchant would typically be required to void the transaction",
   "endpoint": "POST /v3/charges/:flw_ref/void",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "authorization": "Bearer {{secret_key}}",

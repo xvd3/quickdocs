@@ -1,6 +1,10 @@
 {
   "description": "Fetch all virtual cards",
   "endpoint": "GET /v3/virtual-cards",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {},
   "sample_request": {},
   "sample_response": {

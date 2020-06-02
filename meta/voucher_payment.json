@@ -1,6 +1,10 @@
 {
   "description": "This page describes how to collect ZAR payments offline using Vouchers",
   "endpoint": "POST /v3/charges",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {

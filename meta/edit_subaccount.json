@@ -1,6 +1,10 @@
 {
   "description": "This allows you to update an existing subaccount.",
   "endpoint": "PUT /v3/subaccounts/:id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "put_body"],
     "spec": [

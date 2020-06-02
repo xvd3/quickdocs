@@ -1,6 +1,10 @@
 {
   "description": "This allows you initiate a transaction refund",
   "endpoint": "POST /v3/refunds",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "post_body"],
     "spec": [

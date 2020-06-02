@@ -1,6 +1,10 @@
 {
   "description": "This meta shows you how to validate an otp",
   "endpoint": "POST /v3/otps/:reference/validate",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body, params",
     "spec": {

@@ -1,6 +1,10 @@
 {
   "description": "This allows the merchant to refund a captured amount.",
   "endpoint": "POST /v3/charges/:flw_ref/refund",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "post_body"],
     "authorization": "Bearer {{secret_key}}",
@@ -8,7 +12,7 @@
       "secret_key": "Required - true : This is a unique key generated for each button created on Rave’s dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
       "flw_ref": "Required - true : This is he flw_ref returned in the capture response.",
       "amount": "Required - true : The amount to be refunded."
-      
+
     }
   },
   "sample_request": {

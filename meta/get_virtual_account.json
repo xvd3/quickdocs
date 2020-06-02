@@ -1,6 +1,10 @@
 {
   "description": "This allows you to fetch a virtual account number using order reference",
   "endpoint": "GET /v3/virtual-account-numbers/:order_ref",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

@@ -1,6 +1,10 @@
 {
   "description": "This shows you how to accept QR Code payments via API",
   "endpoint": "POST /v3/charges",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {

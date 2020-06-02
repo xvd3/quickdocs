@@ -1,6 +1,10 @@
 {
   "description": "Fetch all subscriptions",
   "endpoint": "GET /v3/subscriptions",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {},
   "sample_request": {},
   "sample_response": {

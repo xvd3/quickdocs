@@ -1,6 +1,10 @@
 {
   "description": "Get transaction fees",
   "endpoint": "GET /v3/transactions/fee",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {

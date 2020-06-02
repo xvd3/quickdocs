@@ -1,6 +1,10 @@
 {
   "description": "Update details tied to a customer card token",
   "endpoint": "PUT /v3/tokens/:token",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "put_body"],
     "spec": [

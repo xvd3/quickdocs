@@ -1,6 +1,10 @@
 {
   "description": "This meta shows you how to create an bill payments",
   "endpoint": "POST /v3/bill-categories",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "none"
   },

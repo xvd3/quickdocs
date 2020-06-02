@@ -1,6 +1,10 @@
 {
   "description": "Activate a subscription",
   "endpoint": "PUT /v3/subscriptions/:id/activate",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {

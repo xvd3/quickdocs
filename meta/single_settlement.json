@@ -1,6 +1,10 @@
 {
   "description": "This allows you to fetch and search all your settlements",
   "endpoint": "GET /v3/settlements/:id?from=2019-01-01&to=2020-01-02",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {
