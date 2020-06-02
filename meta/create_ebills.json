@@ -1,6 +1,6 @@
 {
   "description": "This API allows you to create a new Ebills order",
-  "endpoint": "POST /v3/ebills",
+  "endpoint": "POST /ebills",
   "request_spec": {
     "type": "post_body",
     "spec": {

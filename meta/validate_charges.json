@@ -4,14 +4,12 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "public_key": "Required - true: This is a unique key generated for each button created on Rave’s dashboard. It starts with a prefix FLWPUBK and ends with suffix X.",
       "otp": "Required - true: This is a random 6 character number sent to customers phone number",
       "flw_key": "Required - true: This is the provider reference",
       "type": "Required - false: Set to account if you want to validate an account transaction and set to card for card transactions"
     }
   },
   "sample_request": {
-    "public_key": "FLWPUBK-db4a8d5ebe308c5e15ec95976ceddd14-X",
     "otp": "12345",
     "flw_ref": "FLW-MOCK-856cc923cf8cc750d4df4802c17b7be1",
     "type": "account"
