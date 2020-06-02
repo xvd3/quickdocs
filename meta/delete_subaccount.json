@@ -1,6 +1,6 @@
 {
   "description": "This shows you how to delete a subaccount",
-  "endpoint": "DELETE /v3/subaccounts/:id",
+  "endpoint": "DELETE /subaccounts/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

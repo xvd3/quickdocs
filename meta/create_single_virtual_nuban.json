@@ -1,6 +1,6 @@
 {
   "description": "This meta shows you how to create a virtual nuban",
-  "endpoint": "POST /v3/virtual-account-numbers",
+  "endpoint": "POST /virtual-account-numbers",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

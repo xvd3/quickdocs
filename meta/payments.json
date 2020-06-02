@@ -1,6 +1,6 @@
 {
   "description": "This meta describes how to perform payments using the Rave standard method",
-  "endpoint": "POST /v3/payments",
+  "endpoint": "POST /payments",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

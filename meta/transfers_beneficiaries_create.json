@@ -1,6 +1,6 @@
 {
   "description": "Create a transfer beneficiary",
-  "endpoint": "POST /v3/beneficiaries",
+  "endpoint": "POST /beneficiaries",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

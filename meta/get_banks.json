@@ -1,6 +1,6 @@
 {
   "description": "Get list of banks you can transfer to",
-  "endpoint": "GET /v3/banks/:country",
+  "endpoint": "GET /banks/:country",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

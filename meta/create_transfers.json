@@ -1,6 +1,6 @@
 {
   "description": "This meta shows you how to initiate a transfer",
-  "endpoint": "POST /v3/transfers",
+  "endpoint": "POST /transfers",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

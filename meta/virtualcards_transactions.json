@@ -1,6 +1,6 @@
 {
   "description": "Fetch transactions by date range on a single card",
-  "endpoint": "GET /v3/virtual-cards/:id/transactions",
+  "endpoint": "GET /virtual-cards/:id/transactions",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

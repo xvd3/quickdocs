@@ -1,6 +1,6 @@
 {
   "description": "This allows you initiate a transaction refund",
-  "endpoint": "POST /v3/refunds",
+  "endpoint": "POST /refunds",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "This meta describes how to find a details about a card using the card bin",
-  "endpoint": "GET /v3/card-bins/:bin",
+  "endpoint": "GET /card-bins/:bin",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

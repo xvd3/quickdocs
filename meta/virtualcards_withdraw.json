@@ -1,6 +1,6 @@
 {
   "description": "Withdraw existing funds from a virtual card",
-  "endpoint": "POST /v3/virtual-cards/:id/withdraw",
+  "endpoint": "POST /virtual-cards/:id/withdraw",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

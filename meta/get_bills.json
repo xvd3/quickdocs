@@ -1,6 +1,6 @@
 {
   "description": "This meta shows you how to retrieve a history of all purchased bill services including commission earned.",
-  "endpoint": "GET /v3/bills",
+  "endpoint": "GET /bills",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

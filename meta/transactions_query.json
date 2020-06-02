@@ -1,6 +1,6 @@
 {
   "description": "Fetch all transactions on your account",
-  "endpoint": "GET /v3/transactions",
+  "endpoint": "GET /transactions",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
@@ -18,7 +18,7 @@
       "currency": "This is the currency the transaction list should come in e.g. NGN, USD, EUR, GHS, KES, GBP and ZAR"
     }
   },
-  "sample_request": "GET /v3/transactions?from=2020-03-01&to=2020-04-01&status=successful&page=1&type=card",
+  "sample_request": "GET /transactions?from=2020-03-01&to=2020-04-01&status=successful&page=1&type=card",
   "sample_response": {
     "status": "success",
     "message": "Transactions fetched",

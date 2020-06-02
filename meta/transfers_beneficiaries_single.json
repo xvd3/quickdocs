@@ -1,6 +1,6 @@
 {
   "description": "Get a single transfer beneficiary details",
-  "endpoint": "GET /v3/beneficiaries/:id",
+  "endpoint": "GET /beneficiaries/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

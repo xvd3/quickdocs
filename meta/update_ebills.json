@@ -1,6 +1,6 @@
 {
   "description": "This API is used to update the Ebills",
-  "endpoint": "PUT /v3/ebills/:reference",
+  "endpoint": "PUT /ebills/:reference",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

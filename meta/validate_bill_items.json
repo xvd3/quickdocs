@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "item_code": "This is the code for the product to be purchased. Can be gotten from the response payload of GET /v3/bill-categories",
+      "item_code": "This is the code for the product to be purchased. Can be gotten from the response payload of GET /bill-categories",
       "code": "This is the biller code for the service",
       "customer": "This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number"
     }

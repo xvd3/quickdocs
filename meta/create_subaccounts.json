@@ -1,6 +1,6 @@
 {
   "description": "This meta shows you how to create a subaccount on rave.",
-  "endpoint": "POST /v3/subaccounts",
+  "endpoint": "POST /subaccounts",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

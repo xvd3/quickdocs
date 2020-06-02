@@ -1,6 +1,6 @@
 {
   "description": "This meta shows you how to cancel recurring Airtime and DSTV bill services",
-  "endpoint": "PUT /v3/recurring-bills/:id",
+  "endpoint": "PUT /recurring-bills/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

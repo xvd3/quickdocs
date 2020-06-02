@@ -1,6 +1,6 @@
 {
   "description": "Get wallet balance for specific currency",
-  "endpoint": "GET /v3/balances/:currency",
+  "endpoint": "GET /balances/:currency",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

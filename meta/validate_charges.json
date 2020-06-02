@@ -1,6 +1,6 @@
 {
   "description": "This shows you how to validate a pending transaction",
-  "endpoint": "POST /v3/validate-charge",
+  "endpoint": "POST /validate-charge",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

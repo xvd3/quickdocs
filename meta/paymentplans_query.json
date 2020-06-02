@@ -1,6 +1,6 @@
 {
   "description": "Fetch all payment plans on your account",
-  "endpoint": "GET /v3/payment-plans",
+  "endpoint": "GET /payment-plans",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

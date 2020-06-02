@@ -1,6 +1,6 @@
 {
   "description": "This allows you fetch a single subaccount using the subaccount ID",
-  "endpoint": "GET /v3/subaccounts/:id",
+  "endpoint": "GET /subaccounts/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

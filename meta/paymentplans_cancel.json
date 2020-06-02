@@ -1,6 +1,6 @@
 {
   "description": "Cancel an existing payment plan",
-  "endpoint": "PUT /v3/payment-plans/:id/cancel",
+  "endpoint": "PUT /payment-plans/:id/cancel",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

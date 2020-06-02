@@ -1,6 +1,6 @@
 {
   "description": "Delete a transfer beneficiary",
-  "endpoint": "DELETE /v3/beneficiaries/:id",
+  "endpoint": "DELETE /beneficiaries/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "Fetch all transfers on your account",
-  "endpoint": "GET /v3/transfers",
+  "endpoint": "GET /transfers",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "This allows you to fetch bvn information",
-  "endpoint": "GET /v3/kyc/bvns/:bvn",
+  "endpoint": "GET /kyc/bvns/:bvn",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

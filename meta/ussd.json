@@ -1,6 +1,6 @@
 {
   "description": "This page describes how to collect (NGN) payments via USSD.",
-  "endpoint": "POST /v3/charges",
+  "endpoint": "POST /charges",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "This allows you to fetch and search all your settlements",
-  "endpoint": "GET /v3/settlements",
+  "endpoint": "GET /settlements",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "Get transaction fees",
-  "endpoint": "GET /v3/transactions/fee",
+  "endpoint": "GET /transactions/fee",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
@@ -14,7 +14,7 @@
       "card_6": "This can be used only when the user has entered first 6digits of their card number, it also helps determine international fees on the transaction if the card being used is an international card"
     }
   },
-  "sample_request": "GET /v3/transactions/fee?amount=10000&currency=UGX",
+  "sample_request": "GET /transactions/fee?amount=10000&currency=UGX",
   "sample_response": {
     "status": "success",
     "message": "Charged fee",

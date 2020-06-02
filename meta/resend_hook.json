@@ -1,6 +1,6 @@
 {
   "description": "Resend a failed webhook to your server",
-  "endpoint": "POST /v3/transactions/:tx_ref/resend-hook",
+  "endpoint": "POST /transactions/:tx_ref/resend-hook",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "View Transaction Timeline",
-  "endpoint": "GET /v3/transactions/:id/events",
+  "endpoint": "GET /transactions/:id/events",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 {
   "description": "Fetch all subscriptions",
-  "endpoint": "GET /v3/subscriptions",
+  "endpoint": "GET /subscriptions",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

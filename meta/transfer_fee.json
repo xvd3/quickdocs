@@ -1,6 +1,6 @@
 {
   "description": "Get applicable transfer fee",
-  "endpoint": "GET /v3/transfers/fee",
+  "endpoint": "GET /transfers/fee",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

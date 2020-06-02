@@ -1,6 +1,6 @@
 {
   "description": "Block/Unblock a virtual card",
-  "endpoint": "PUT /v3/virtual-cards/:id/status/:status",
+  "endpoint": "PUT /virtual-cards/:id/status/:status",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

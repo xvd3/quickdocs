@@ -1,6 +1,6 @@
 {
   "description": "Update an existing payment plan",
-  "endpoint": "PUT /v3/payment-plans/:id",
+  "endpoint": "PUT /payment-plans/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

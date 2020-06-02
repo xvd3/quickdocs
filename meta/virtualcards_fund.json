@@ -1,6 +1,6 @@
 {
   "description": "Fund an existing virtual card on your account",
-  "endpoint": "POST /v3/virtual-cards/:id/fund",
+  "endpoint": "POST /virtual-cards/:id/fund",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

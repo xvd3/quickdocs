@@ -1,6 +1,6 @@
 {
   "description": "Fetch all virtual cards",
-  "endpoint": "GET /v3/virtual-cards",
+  "endpoint": "GET /virtual-cards",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

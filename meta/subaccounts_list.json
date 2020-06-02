@@ -1,6 +1,6 @@
 {
   "description": "This allows you to list all or specific subaccounts.",
-  "endpoint": "GET /v3/subaccounts",
+  "endpoint": "GET /subaccounts",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

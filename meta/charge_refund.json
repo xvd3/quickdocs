@@ -1,6 +1,6 @@
 {
   "description": "This allows the merchant to refund a captured amount.",
-  "endpoint": "POST /v3/charges/:flw_ref/refund",
+  "endpoint": "POST /charges/:flw_ref/refund",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

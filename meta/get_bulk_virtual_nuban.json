@@ -1,6 +1,6 @@
 {
   "description": "This allows you to fetch bulk virtual nubans using batch id",
-  "endpoint": "GET /v3/bulk-virtual-account-numbers/:batch_id",
+  "endpoint": "GET /bulk-virtual-account-numbers/:batch_id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

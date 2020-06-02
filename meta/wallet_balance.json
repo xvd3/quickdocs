@@ -1,6 +1,6 @@
 {
   "description": "Get all wallet balances",
-  "endpoint": "GET /v3/balances",
+  "endpoint": "GET /balances",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"

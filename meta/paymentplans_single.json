@@ -1,6 +1,6 @@
 {
   "description": "Get details of a payment plan",
-  "endpoint": "GET /v3/payment-plans/:id",
+  "endpoint": "GET /payment-plans/:id",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
