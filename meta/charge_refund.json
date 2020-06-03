@@ -9,7 +9,7 @@
     "type": ["params", "post_body"],
     "authorization": "Bearer {{secret_key}}",
     "spec": {
-      "secret_key": "Required - true : This is a unique key generated for each button created on Rave’s dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
+      "secret_key": "Required - true : This is a unique key generated for each button created on Flutterwave's dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
       "flw_ref": "Required - true : This is he flw_ref returned in the capture response.",
       "amount": "Required - true : The amount to be refunded."
 

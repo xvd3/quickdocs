@@ -14,7 +14,7 @@
       "customer_email": "This is the email of the customer who carried out a transaction. Use for more specific listing.",
       "status": "This is the transaction status, can be set to successful, failed etc",
       "tx_ref": "This is the merchant reference ties to a transaction. Use for more specific searches",
-      "customer_fullname": "This is the combination of the customer first name and last name passed to rave during transaction.",
+      "customer_fullname": "This is the combination of the customer first name and last name passed to Flutterwave during transaction.",
       "currency": "This is the currency the transaction list should come in e.g. NGN, USD, EUR, GHS, KES, GBP and ZAR"
     }
   },

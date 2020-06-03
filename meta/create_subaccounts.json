@@ -1,5 +1,5 @@
 {
-  "description": "This meta shows you how to create a subaccount on rave.",
+  "description": "This meta shows you how to create a subaccount on Flutterwave.",
   "endpoint": "POST /subaccounts",
   "headers": {
     "Authorization": "Bearer {Secret Key}",

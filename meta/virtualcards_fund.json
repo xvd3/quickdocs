@@ -13,7 +13,7 @@
       },
       {
         "amount": "This is the amount you want to fund the card. The amount would be in the card currency",
-        "debit_currency": "Use this if you want to debit a different balance on Rave to fund your card e.g. you are funding a USD card but you want to debit your NGN balance to fund the card"
+        "debit_currency": "Use this if you want to debit a different balance on Flutterwave to fund your card e.g. you are funding a USD card but you want to debit your NGN balance to fund the card"
       }
     ]
   },
