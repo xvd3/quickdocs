@@ -1,0 +1,35 @@
+{
+  "description": "Fetch all transfers on your account",
+  "endpoint": "GET /transfers/:id",
+  "request_spec": {
+    "type": "params_path",
+    "spec": {
+      "id": "Numeric id of the transfer to fetch"
+    }
+  },
+  "sample_request": {},
+  "sample_response": {
+    "status": "success",
+    "message": "Transfer fetched",
+    "data": {
+        "id": 26167,
+        "account_number": "0690000044",
+        "bank_code": "044",
+        "full_name": "Mercedes Daniel",
+        "created_at": "2020-01-19T22:44:03.000Z",
+        "currency": "NGN",
+        "debit_currency": "NGN",
+        "amount": 5500,
+        "fee": 45,
+        "status": "PENDING",
+        "reference": "akhlm-pstmnpyt-rfxx001_PMCKDU_1",
+        "meta": null,
+        "narration": "Akhlm Pstmn Trnsfr xx001",
+        "approver": null,
+        "complete_message": "Transaction is currently being processed",
+        "requires_approval": 0,
+        "is_approved": 1,
+        "bank_name": "ACCESS BANK NIGERIA"
+      }
+  }
+}

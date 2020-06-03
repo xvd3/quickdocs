@@ -1,5 +1,5 @@
 {
-  "description": "This ameta describes how to perform card payments using Rave's APIs",
+  "description": "This meta describes how to perform card payments using Flutterwave's APIs",
   "endpoint": "POST /charges",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
@@ -22,6 +22,7 @@
       "cvv": "Required - true: Card security code. This is 3/4 digit code at the back of the customers card, used for web payments.",
       "expiry_month": "Required - true: Two-digit number representing the card's expiration month.",
       "expiry_year": "Required - true: Two- digit number representing the card's expiration year.",
+      "plan": "Required - false: This is required for recurring payment. It is the id of the payment plan created.",
       "meta": "Required - false: This is to include additional payment information",
       "authorization": "Required - false: This is an object that should contain the authorization mode, pin, and biller address",
       "preauthorize": "Required - false:  This should be set to true for preauthoize card transactions",
