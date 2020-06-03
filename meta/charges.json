@@ -1,6 +1,6 @@
 {
   "description": "This meta describes how to perform card payments using Flutterwave's APIs",
-  "endpoint": "POST /charges",
+  "endpoint": "POST /charges?type=card",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
@@ -15,7 +15,6 @@
       "phone_number": "Required - false: This is the phone number linked to the customer's mobile money account.",
       "client_ip": "Required - false: IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.",
       "device_fingerprint": "Required - false: This is the fingerprint for the device being used. It can be generated using a library on whatever platform is being used.",
-      "type": "Required - true: This specifies that the payment method being used. it should be passed as a query params which can be - card, account and so on.",
       "redirect_url": "Required - false: This is a url you provide, we redirect to it after the customer completes payment and append the response to it as query parameters. (3DSecure only)",
       "card_number": "Required - true: This is the number on the cardholders card. E.g. 5399 6701 2349 0229.",
       "cvv": "Required - true: Card security code. This is 3/4 digit code at the back of the customers card, used for web payments.",
