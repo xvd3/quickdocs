@@ -13,7 +13,6 @@
       "currency": "Required: true : This is the specified currency to charge the card in. With Flutterwave you can charge cards in more than 90 currencies, all you need to do is pass the specified currency you would like to charge the in.",
       "email": "Required - true: This is the email address of the customer.",
       "phone_number": "Required - false: This is the phone number linked to the customer's mobile money account.",
-      "subaccounts": "Required - false: This is an array of objects containing the subaccount IDs to split the payment into.",
       "client_ip": "Required - false: IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.",
       "device_fingerprint": "Required - false: This is the fingerprint for the device being used. It can be generated using a library on whatever platform is being used.",
       "type": "Required - true: This specifies that the payment method being used. it should be passed as a query params which can be - card, account and so on.",
@@ -22,11 +21,9 @@
       "cvv": "Required - true: Card security code. This is 3/4 digit code at the back of the customers card, used for web payments.",
       "expiry_month": "Required - true: Two-digit number representing the card's expiration month.",
       "expiry_year": "Required - true: Two- digit number representing the card's expiration year.",
-      "plan": "Required - false: This is required for recurring payment. It is the id of the payment plan created.",
       "meta": "Required - false: This is to include additional payment information",
-      "authorization": "Required - false: This is an object that should contain the authorization mode, pin, and biller address",
+      "authorization": "Required - false: This is an object that contains the authorization details of the card you want to charge. The authorization instructions for card charges are returned in the initiate charge call as meta.authorization",
       "preauthorize": "Required - false:  This should be set to true for preauthoize card transactions",
-      "mode": "Required - false: The Auth model to use when validating - e.g pin, avs_noauth or avs"
     },
       "sample_spec_to_encrypt": {
         "card_number": "4556052704172643",
@@ -34,7 +31,6 @@
         "expiry_month": "01",
         "expiry_year": "21",
         "currency": "NGN",
-        "country": "NG",
         "amount": "1000",
         "email": "user@gmail.com",
         "phone_number": "0902620185",
