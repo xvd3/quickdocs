@@ -1,6 +1,6 @@
 {
   "description": "This allows your customer to pay via a NIP (NIBBS Instant Payment) transfer.",
-  "endpoint": "POST /bank_transfer",
+  "endpoint": "POST /charges?type=bank_transfer",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
