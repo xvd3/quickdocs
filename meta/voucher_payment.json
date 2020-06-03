@@ -15,7 +15,7 @@
       "email": "Required - true: This is the email address of the customer.",
       "pin": "Required - true: This is the voucher pin given to the user after redemption at the agent location. They would provide this to you as the voucher code.",
       "phone_number": "Required - false: This is the phone number linked to the customer's mobile money account.",
-      "subaccounts": "Required - false: This is an array of objects containing the subaccount IDs to split the payment into.",
+      "redirect_url": "Required - false: This is a url you provide, we redirect to it after the customer completes payment and append the response to it as query parameters.",
       "client_ip": "Required - false: IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.",
       "device_fingerprint": "Required - false: This is the fingerprint for the device being used. It can be generated using a library on whatever platform is being used.",
       "type": "Required - true: This recognises the payment type as `voucher_payment`",
