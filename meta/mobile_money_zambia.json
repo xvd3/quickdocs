@@ -1,6 +1,6 @@
 {
   "description": "This meta describes how to collect payments via Zambia mobile money.",
-  "endpoint": "POST /charges",
+  "endpoint": "POST /charges?type=mobile_money_zambia",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
@@ -12,12 +12,12 @@
       "amount": "Required - true : This is the amount to be charged it is passed in RWF - ('amount':'100').",
       "currency": "Required - true : Required - true : This is the specified currency to charge in. (expected value: ZMW)",
       "fullname": "Required - false: Should include first and last name of the customer",
+      "order_id": "Required - false: Unique identifier for the mobilemoney transaction to be provided by the merchant",
       "email": "Required - true :This is the email address of the customer.",
       "phone_number": "Required - true : This is the phone number linked to the customer's mobile money account.",
       "client_ip": "Required - false : IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.",
       "device_fingerprint": "Required - false : This is the fingerprint for the device being used. It can be generated using a library on whatever platform is being used.",
       "network": "Required - false : This is the customer's mobile money network provider. (possible values: MTN)",
-      "type": "Required - true : This specifies that the payment method being used is for mobile money payments. it should be set to - mobile_money_zambia",
       "meta": "Required - false : This is to include additional payment information"
     }
   },
