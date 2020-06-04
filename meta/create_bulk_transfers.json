@@ -17,9 +17,9 @@
     "bulk_data": [
       {
         "bank_code": "044",
-        "account_numberr": "0690000032",
+        "account_number": "0690000032",
         "amount": 45000,
-        "country": "NGN",
+        "currency": "NGN",
         "narration": "akhlm blktrnsfr",
         "reference": "akhlm-blktrnsfr-xx03"
       },
