@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "bulk_id": "This is the id returned in the bulk charge response."
+      "bulk_id": "Required: This is the id returned in the bulk charge response."
     }
   },
   "sample_request": {
