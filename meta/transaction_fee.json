@@ -8,10 +8,10 @@
   "request_spec": {
     "type": "params_query",
     "spec": {
-      "amount": "[Required] This is the amount of the product or service to charged from the customer",
-      "currency": "[Required] This is the specified currency to charge",
-      "p_type": "This is an optional parameter to be used when the payment type is account payment. A value of 2 is to be passed to the endpoint",
-      "card_6": "This can be used only when the user has entered first 6digits of their card number, it also helps determine international fees on the transaction if the card being used is an international card"
+      "amount": "Required: This is the amount of the product or service to charged from the customer",
+      "currency": "Required: This is the specified currency to charge",
+      "payment_type": "This is an optional parameter to be used when getting the transaction fees for different payment types. The expected values are card, debit_ng_account, mobilemoney, bank_transfer, and ach_payment",
+      "card_first6digits": "This can be used only when the user has entered first 6digits of their card number, it also helps determine international fees on the transaction if the card being used is an international card"
     }
   },
   "sample_request": "GET /transactions/fee?amount=10000&currency=UGX",
