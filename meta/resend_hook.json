@@ -1,6 +1,6 @@
 {
   "description": "Resend a failed webhook to your server",
-  "endpoint": "POST /transactions/:tx_ref/resend-hook",
+  "endpoint": "POST /transactions/:id/resend-hook",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
@@ -9,10 +9,10 @@
     "type": ["params", "params_query"],
     "spec": [
       {
-        "tx_ref": "This is the merchant unique transaction reference"
+        "id": "Required: This is the transaction unique identifier. It is returned in the initiate transaction call as data.id"
       },
       {
-        "wait": "If this is passed the endpoint would hold for the hook response and return what you respond with as the response. the expected value is 1"
+        "wait": "If this is passed the endpoint would hold for the hook response and return what you respond with as the response. The expected value is 1"
       }
     ]
   },
