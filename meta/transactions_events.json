@@ -8,12 +8,10 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "This is the transaction ID"
+      "id": "Required: This is the unique transaction ID. It is returned in the verify transaction call as data.id"
     }
   },
-  "sample_request": {
-    "id": "957764"
-  },
+  "sample_request": "GET /transactions/957764/events",
   "sample_response": {
     "status": "success",
     "message": "Transaction events fetched",
