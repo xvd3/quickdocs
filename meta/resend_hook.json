@@ -17,7 +17,7 @@
     ]
   },
   "sample_request": {
-    "tx_ref": "akhilome-1577988562446",
+    "id": "akhilome-1577988562446",
     "wait": 1
   },
   "sample_response": {
