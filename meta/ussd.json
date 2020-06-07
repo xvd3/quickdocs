@@ -8,16 +8,16 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "account_bank": "Required - true : This is the Bank numeric code e.g 058",
-      "tx_ref": "Required - true: Required - false: This is a unique reference, unique to the particular transaction being carried out.  It is generated when it is not provided by the merchant for every transaction.",
-      "amount": "Required - true: This is the amount to be charged it is passed as - (“amount”:`100`). N.B. Amount should not be less than 100.",
+      "account_bank": "Required: This is the Bank numeric code e.g 058",
+      "tx_ref": "Required: This is a unique reference, unique to the particular transaction being carried out.  It is generated when it is not provided by the merchant for every transaction.",
+      "amount": "Required: This is the amount to be charged it is passed as - (“amount”:`100`). N.B. Amount should not be less than 100.",
       "currency": "Required: true : This is the specified currency to charge in. (Expected value: NGN)",
-      "fullname": "Required - false: Should include first and last name of the customer",
-      "email": "Required - true: This is the email address of the customer.",
-      "phone_number": "Required - false: This is the phone number linked to the customer's mobile money account.",
-      "client_ip": "Required - false: IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.",
-      "device_fingerprint": "Required - false: This is the fingerprint for the device being used. It can be generated using a library on whatever platform is being used.",
-      "meta": "Required - false: This is to include additional payment information"
+      "fullname": "Should include first and last name of the customer",
+      "email": "Required: This is the email address of the customer.",
+      "phone_number": "This is the phone number linked to the customer's mobile money account.",
+      "client_ip": "IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.",
+      "device_fingerprint": "This is the fingerprint for the device being used. It can be generated using a library on whatever platform is being used.",
+      "meta": "This is to include additional payment information"
     }
   },
   "sample_request": {

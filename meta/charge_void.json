@@ -9,8 +9,8 @@
     "type": "params",
     "authorization": "Bearer {{secret_key}}",
     "spec": {
-      "secret_key": "Required - true : This is a unique key generated for each button created on Flutterwave's dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
-      "flw_ref": "Required - true : This is the flw_ref returned in the capture response."
+      "secret_key": "Required: This is a unique key generated for each button created on Flutterwave's dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
+      "flw_ref": "Required: This is the flw_ref returned in the capture response."
     }
   },
   "sample_request": "/v3/charges/FLW-TYR67844/void",

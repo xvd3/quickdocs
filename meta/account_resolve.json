@@ -8,8 +8,8 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "account_number": " Required - true: Account number to be resolved",
-      "account_bank": "Required - true: Bank code"
+      "account_number": " Required: Account number to be resolved",
+      "account_bank": "Required: Bank code"
     }
   },
   "sample_request": {

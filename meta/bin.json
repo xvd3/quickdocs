@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "post_body",
     "params": {
-      "bin": "Required - true: the first 6 six digits on a debit/credit card"
+      "bin": "Required: the first 6 six digits on a debit/credit card"
     }
   },
   "sample_request": {

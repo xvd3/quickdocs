@@ -8,9 +8,9 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "otp": "Required - true: This is a random 6 character number sent to customers phone number",
-      "flw_key": "Required - true: This is the provider reference",
-      "type": "Required - false: This recognises the type of payment you want to validate. Set to account if you want to validate an account transaction and set to card for card transactions"
+      "otp": "Required: This is a random 6 character number sent to customers phone number",
+      "flw_key": "Required: This is the provider reference",
+      "type": "This recognises the type of payment you want to validate. Set to account if you want to validate an account transaction and set to card for card transactions"
     }
   },
   "sample_request": {
