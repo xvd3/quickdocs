@@ -8,32 +8,41 @@
   "request_spec": {
     "type": "params_path",
     "spec": {
-      "id": "Numeric id of the transfer to fetch"
+      "id": "Required: Numeric id of the transfer to fetch"
     }
   },
-  "sample_request": {},
+  "sample_request": "GET /transfers/26167",
   "sample_response": {
     "status": "success",
-    "message": "Transfer fetched",
-    "data": {
-        "id": 26167,
-        "account_number": "0690000044",
+    "message": "Transfers fetched",
+    "meta": {
+      "page_info": {
+        "total": 1,
+        "current_page": 1,
+        "total_pages": 1
+      }
+    },
+    "data": [
+      {
+        "id": 30533,
+        "account_number": "0690000033",
         "bank_code": "044",
-        "full_name": "Mercedes Daniel",
-        "created_at": "2020-01-19T22:44:03.000Z",
+        "full_name": "Bale Gary",
+        "created_at": "2020-03-17T08:53:02.000Z",
         "currency": "NGN",
         "debit_currency": "NGN",
-        "amount": 5500,
-        "fee": 45,
-        "status": "PENDING",
-        "reference": "akhlm-pstmnpyt-rfxx001_PMCKDU_1",
+        "amount": 30020,
+        "fee": 26.875,
+        "status": "SUCCESSFUL",
+        "reference": "e5998fdfef4104cd_PMCKDU_5",
         "meta": null,
-        "narration": "Akhlm Pstmn Trnsfr xx001",
+        "narration": "lolololo",
         "approver": null,
-        "complete_message": "Transaction is currently being processed",
+        "complete_message": "Successful",
         "requires_approval": 0,
         "is_approved": 1,
         "bank_name": "ACCESS BANK NIGERIA"
       }
+    ]
   }
 }
