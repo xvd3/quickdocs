@@ -8,12 +8,10 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "bvn": "This is a valid bvn number"
+      "bvn": "Required: This is a valid BVN number you want to resolve."
     }
   },
-  "sample_request": {
-    "bvn": "012345678910"
-  },
+  "sample_request": "GET /kyc/bvns/012345678910",
   "sample_response": {
     "status": "success",
     "message": "BVN details fetched",
