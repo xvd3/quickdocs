@@ -6,16 +6,14 @@
     "Content-Type": "application/json"
   },
   "request_spec": {
-    "type": ["params", "params_query"],
+    "type": ["params_query"],
     "spec": [
       {
-        "id": "Bank id – gotten from the banks listing endpoint - GET /banks/:country"
+        "id": "Required: Unique bank ID, it is returned in the call to fetch banks here - https://developer.flutterwave.com/v3.0/reference#get-all-banks"
       }
     ]
   },
-  "sample_request": {
-    "id": "280"
-  },
+  "sample_request": "GET /banks/280/branches",
   "sample_response": {
     "status": "success",
     "message": "Bank branches fetched successfully",
