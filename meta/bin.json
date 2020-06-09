@@ -11,10 +11,7 @@
       "bin": "Required: the first 6 six digits on a debit/credit card"
     }
   },
-  "sample_request": {
-    "method": "GET",
-    "path": "/card-bins/475130"
-  },
+  "sample_request": "GET /card-bins/475130",
   "sample_response": {
     "status": "success",
     "message": "completed",
