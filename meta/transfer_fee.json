@@ -8,12 +8,11 @@
   "request_spec": {
     "type": "params_query",
     "spec": {
-      "currency": "This get's the fee in a particular currency"
+      "currency": "This get's the fee in a particular currency",
+      "amount": "Required: This is the transfer amount to be fetched."
     }
   },
-  "sample_request": {
-    "currency": "KES"
-  },
+  "sample_request": "/transfers/fee?currency=KES",
   "sample_response": {
     "status": "success",
     "message": "Transfer fee fetched",
