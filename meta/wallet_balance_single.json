@@ -6,14 +6,12 @@
     "Content-Type": "application/json"
   },
   "request_spec": {
-    "type": "params",
+    "type": "params_query",
     "spec": {
-      "currency": "Target wallet currency to fetch balance for"
+      "currency": "Required: Target wallet currency to fetch balance for"
     }
   },
-  "sample_request": {
-    "currency": "NGN"
-  },
+  "sample_request": "GET /balances/NGN",
   "sample_response": {
     "status": "success",
     "message": "Wallet balance fetched",
