@@ -12,7 +12,7 @@
       "amount": "Required: This is the transfer amount to be fetched."
     }
   },
-  "sample_request": "/transfers/fee?currency=KES",
+  "sample_request": "GET /transfers/fee?currency=KES",
   "sample_response": {
     "status": "success",
     "message": "Transfer fee fetched",
