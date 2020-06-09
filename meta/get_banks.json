@@ -6,16 +6,14 @@
     "Content-Type": "application/json"
   },
   "request_spec": {
-    "type": ["params", "params_query"],
+    "type": ["params_query"],
     "spec": [
       {
-        "country": "pass either NG, GH, KE, UG, ZA or TZ to get list of banks in Nigeria, Ghana, Kenya, Uganda, South Africa or Tanzania respectively"
+        "country": "Required: Pass either NG, GH, KE, UG, ZA or TZ to get list of banks in Nigeria, Ghana, Kenya, Uganda, South Africa or Tanzania respectively"
       }
     ]
   },
-  "sample_request": {
-    "country": "NG"
-  },
+  "sample_request":"GET /banks/NG",
   "sample_response": {
     "status": "success",
     "message": "Banks fetched successfully",
