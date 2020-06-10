@@ -8,8 +8,8 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "account_number": "This is the recipient account number",
-      "account_bank": "This is the recipient bank code"
+      "account_number": "Required: The beneficiary's bank account number",
+      "account_bank": "Required: This is the beneficiary’s bank code, you can use the List of Banks to retrieve a bank code."
     }
   },
   "sample_request": {
