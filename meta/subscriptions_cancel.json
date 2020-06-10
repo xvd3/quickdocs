@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "subscription id"
+      "id": "Required: This is the unique id of the subscription you want to cancel. It is returned in the Get a subscription call as data.id"
     }
   },
   "sample_request": {
