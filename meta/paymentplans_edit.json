@@ -9,11 +9,11 @@
     "type": ["params", "put_body"],
     "spec": [
       {
-        "id": "payment plan id"
+        "id": "Required: This is the unique id of the payment plan you want to fetch. It is returned in the call to create a payment plan as data.id"
       },
       {
-        "name": "Name of the payment plan",
-        "status": "Status you would like to update the payment plan to. Possible values are \"active\", \"cancelled\""
+        "name": "Required: The new name of the payment plan",
+        "status": "Required: The new status of the payment plan"
       }
     ]
   },
