@@ -8,12 +8,10 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "payment plan id"
+      "id": "Required: This is the unique id of the payment plan you want to fetch. It is returned in the call to create a payment plan as data.id"
     }
   },
-  "sample_request": {
-    "id": 3806
-  },
+  "sample_request": "GET /payment-plans/3806",
   "sample_response": {
     "status": "success",
     "message": "Payment plan fetched",
