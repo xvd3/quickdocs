@@ -5,7 +5,20 @@
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
   },
-  "request_spec": {},
+  "request_spec": {
+    "type":  "params",
+    "spec": {
+      "email": "This is the email of the subscriber",
+      "transaction_id": "This is the id of the transaction. It is returned in the call to verify a transaction as data.id.",
+      "plan": "This is the ID of the payment plan. It is returned in the call to create a payment plan as data.id.",
+      "subscribed_from": "This is the params to filter from the start date of the subscriptions.",
+      "subscribed_to": "This is the params to filter to the end date of the subscriptions.",
+      "next_due_from": "This is the params to filter from the start date of the next due subscriptions",
+      "next_due_to": "This is the params to filter to the end date of the next due subscriptions",
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page",
+      "status": "This is the params used to filter the list of subscription based on the status which can be either active or cancelled"
+    }
+  },
   "sample_request": {},
   "sample_response": {
     "status": "success",
