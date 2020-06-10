@@ -8,12 +8,10 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "This is the id of the beneficiary, it is returned in the create beneficiary call as data.id"
+      "id": "Required: This is the id of the beneficiary, it is returned in the create beneficiary call as data.id"
     }
   },
-  "sample_request": {
-    "id": "3103"
-  },
+  "sample_request": "DELETE /beneficiaries/3103",
   "sample_response": {
     "status": "success",
     "message": "Beneficiary deleted",
