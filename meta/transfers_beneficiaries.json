@@ -6,8 +6,10 @@
     "Content-Type": "application/json"
   },
   "request_spec": {
-    "type": {},
-    "spec": {}
+    "type": ["params_query"],
+    "spec": {
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page"
+    }
   },
   "sample_request": {},
   "sample_response": {
