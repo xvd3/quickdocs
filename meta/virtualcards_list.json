@@ -5,7 +5,12 @@
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
   },
-  "request_spec": {},
+  "request_spec": {
+    "type": "params_query",
+    "spec": {
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page."
+    }
+  },
   "sample_request": {},
   "sample_response": {
     "status": "success",
