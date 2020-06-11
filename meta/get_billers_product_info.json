@@ -8,8 +8,8 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "This is the biller's code",
-      "product_id": "This is the product code for the particular biller"
+      "id": "Required: This is the biller's code",
+      "product_id": "This is the item code for the particular product"
     }
   },
   "sample_request": {},
