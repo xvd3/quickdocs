@@ -4,7 +4,7 @@ We've made it possible for you to quickly get an overview of our API endpoint pa
 
 * API description
 * Parameters and descriptions
-*Required values for parameters
-*Headers
-*Sample Requests
-*Samples Responses, etc
+* Required values for parameters
+* Headers
+* Sample Requests
+* Samples Responses, etc
