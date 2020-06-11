@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "reference": "This is the tx_ref of the bill transaction"
+      "reference": "Required: This is the tx_ref of the bill transaction"
     }
   },
   "sample_request": "/v3/bills/CF-FLYAPI-201808240106311799470372",
