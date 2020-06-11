@@ -10,11 +10,9 @@
       "params",
       "post_body"
     ],
-    "authorization": "Bearer {{secret_key}}",
     "spec": {
-      "secret_key": "Required: This is a unique key generated for each button created on Flutterwave's dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
-      "flw_ref": "Required: This is he flw_ref returned in the capture response.",
-      "amount": "This allows you capture an amount less than the original amount authorised on the card"
+      "flw_ref": "Required: This is the flw_ref returned in the capture response.",
+      "amount": "Required: This allows you capture an amount less than the original amount authorised on the card"
     }
   },
   "sample_request": {
