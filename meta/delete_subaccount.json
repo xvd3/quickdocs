@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "Subaccount id returned when subaccount was created"
+      "id": "Required: This is the unique id of the sub account you want to delete. It is returned in the call to create a subaccount as data.id"
     }
   },
   "sample_request": {},
