@@ -8,12 +8,12 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "item_code": "This is the code for the product to be purchased. Can be gotten from the response payload of GET /bill-categories",
-      "code": "This is the biller code for the service",
-      "customer": "This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number"
+      "item_code": "Required: This is the item_code returned from bills categories endpoint",
+      "code": "Required: This is the biller code for the service",
+      "customer": "Required: This is the customer identifier For airtime, the value must be the customer's phone number. For DSTV, it must be the customer's smartcard number"
     }
   },
-  "sample_request": "?code=BIL099&customer=08038291822",
+  "sample_request": "GET /bill-items/AT099/validate?code=BIL099&customer=08038291822",
   "sample_response": {
     "status": "success",
     "message": "Item validated successfully",
