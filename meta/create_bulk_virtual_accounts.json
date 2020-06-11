@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "accounts": "This is the number of virtual nubans you want to Generate",
+      "accounts": "This is the number of virtual account numbers you want to generate",
       "email": "This could be a generic email address",
       "is_permanent": "This allows you create a static account number i.e. it doesn't expire",
       "duration": "This is represented in days e.g. passing 2 means 2 days. It is the expiry date for the account number. ",
