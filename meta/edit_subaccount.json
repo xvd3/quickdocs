@@ -9,7 +9,7 @@
     "type": ["params", "put_body"],
     "spec": [
       {
-        "id": "The is the subaccount ID, you can get it from the List Subaccount endpoint."
+        "id": "Required: This is the unique id of the subaccount you want to update. It is returned in the call to create a subaccount as data.id."
       },
       {
         "account_bank": "This is the sub-accounts bank ISO code, use the List of Banks for Transfer endpoint to retrieve a list of bank codes.",
@@ -22,7 +22,6 @@
     ]
   },
   "sample_request": {
-    "id": "234",
     "account_number": "0690000034",
     "business_name": "Synergy Alliance",
     "business_email": "ted@synergyalliance.com",
