@@ -8,7 +8,6 @@
   "request_spec": {
     "type": ["params", "post_body"],
     "spec": {
-      "secret_key": "Required: This is a unique key generated for each button created on Flutterwave's dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
       "flw_ref": "Required: This is he flw_ref returned in the capture response.",
       "amount": "Required: The amount to be refunded."
 
