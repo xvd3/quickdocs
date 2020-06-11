@@ -8,7 +8,7 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "This is the biller's code"
+      "id": "Required: This is the biller's code"
     }
   },
   "sample_request": {},
