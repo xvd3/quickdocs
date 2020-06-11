@@ -1,6 +1,10 @@
 {
   "description": "This API allows you to create a new Ebills order",
-  "endpoint": "POST /v3/ebills",
+  "endpoint": "POST /ebills",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {

@@ -1,15 +1,17 @@
 {
   "description": "Terminate an existing virtual card",
-  "endpoint": "PUT /v3/virtual-cards/:id/terminate",
+  "endpoint": "PUT /virtual-cards/:id/terminate",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "virtual card id"
+      "id": "Required: This is the unique id of the particular card you want to terminate. You can get this id from the call to create a virtual card as data.id"
     }
   },
-  "sample_request": {
-    "id": "1cb36826-8e05-40d6-8b9e-7f7439a141cb"
-  },
+  "sample_request": "PUT /virtual-cards/1cb36826-8e05-40d6-8b9e-7f7439a141cb/terminate",
   "sample_response": {
     "status": "success",
     "message": "Card terminated successfully",

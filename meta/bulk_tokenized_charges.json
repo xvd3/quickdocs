@@ -1,15 +1,19 @@
 {
   "description": "This endpoint allows you to charge multiple payment tokens at once.",
-  "endpoint": "POST /v3/bulk-tokenized-charges",
+  "endpoint": "POST /bulk-tokenized-charges",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {
       "title": "Narration for the bulk charges",
-      "retry_strategy": "It is what should happen when the transaction fails. It is an object containing 3 properties (retry_interval, retry_amount_variable, retry_attempt_variable)",
-      "retry_interval": "It is the number of mins it should take for the retry to happen",
-      "retry_amount_variable": "It is the amount that would be retried after 2 attempts in percentage",
-      "retry_attempt_variable": "It is the number of times the retry should happen",
-      "bulk_data": "An array of objects containing the tokenized charge data"
+      "retry_strategy": "Required: This is an object that defines what should happen when the transaction fails. It contains 3 properties (retry_interval, retry_amount_variable, retry_attempt_variable)",
+      "retry_interval": "This is the number of mins it should take for the retry to happen",
+      "retry_amount_variable": "This is the amount that would be retried after the specified number of attempts in percentage",
+      "retry_attempt_variable": "This is the number of times the retry should happen",
+      "bulk_data": "Required: An array of objects containing the tokenized bulk charge data. This array contains the same payload you passed to the single tokenize endpoint with multiple different values."
     }
   },
 
@@ -49,13 +53,9 @@
     "status": "success",
     "message": "Bulk charge initiated",
     "data": {
-        "id": 165,
-        "created_at": "2020-04-02T16:45:23.000Z",
-        "approver": "N/A",
-        "title": "akhlm blk tknzd chrg pstmn tst 2",
-        "total_charges": 2,
-        "pending_charges": 2,
-        "processed_charges": 0
+      "id": 165,
+      "created_at": "2020-04-02T16:45:23.000Z",
+      "approver": "N/A"
     }
-}
+  }
 }

@@ -1,10 +1,14 @@
 {
   "description": "Cancel a subscription",
-  "endpoint": "PUT /v3/subscriptions/:id/cancel",
+  "endpoint": "PUT /subscriptions/:id/cancel",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "subscription id"
+      "id": "Required: This is the unique id of the subscription you want to cancel. It is returned in the Get a subscription call as data.id"
     }
   },
   "sample_request": {

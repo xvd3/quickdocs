@@ -1,6 +1,10 @@
 {
   "description": "Fetch all transactions on your account",
-  "endpoint": "GET /v3/transactions",
+  "endpoint": "GET /transactions",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {
@@ -10,11 +14,11 @@
       "customer_email": "This is the email of the customer who carried out a transaction. Use for more specific listing.",
       "status": "This is the transaction status, can be set to successful, failed etc",
       "tx_ref": "This is the merchant reference ties to a transaction. Use for more specific searches",
-      "customer_fullname": "This is the combination of the customer first name and last name passed to rave during transaction.",
+      "customer_fullname": "This is the combination of the customer first name and last name passed to Flutterwave during transaction.",
       "currency": "This is the currency the transaction list should come in e.g. NGN, USD, EUR, GHS, KES, GBP and ZAR"
     }
   },
-  "sample_request": "GET /v3/transactions?from=2020-03-01&to=2020-04-01&status=successful&page=1&type=card",
+  "sample_request": "GET /transactions?from=2020-03-01&to=2020-04-01&status=successful&page=1&type=card",
   "sample_response": {
     "status": "success",
     "message": "Transactions fetched",

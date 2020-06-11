@@ -1,13 +1,14 @@
 {
   "description": "This allows you to fetch and search all your settlements",
-  "endpoint": "GET /v3/settlements",
+  "endpoint": "GET /settlements",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {
-      "from": "The start date range to retrieve data from. YYYY:MM:DD",
-      "to": "The end date range to retrieve data. YYYY:MM:DD",
-      "page": "This allows you paginate the record returned, the default number of records returned is 20.",
-      "subaccount_id": "Provide a subaccount ID to export settlements that belong to the subaccount alone. skip it to get settlement belonging to your account alone."
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page."
     }
   },
   "sample_request": {},

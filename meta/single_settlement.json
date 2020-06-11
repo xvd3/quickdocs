@@ -1,12 +1,16 @@
 {
   "description": "This allows you to fetch and search all your settlements",
-  "endpoint": "GET /v3/settlements/:id?from=2019-01-01&to=2020-01-02",
+  "endpoint": "GET /settlements/:id?from=2019-01-01&to=2020-01-02",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {
-      "id": "Provide the ID of the settlement to retrieve a single settlement. The ID can be gotten from the List all settlements service",
-      "from": "The start date range to retrieve data from. YYYY:MM:DD",
-      "to": "The end date range to retrieve data. YYYY:MM:DD"
+      "id": "Required: This is a unique identifier for the particular settlement you want to fetch. It is returned in the call to list all settlements as data.id",
+      "from": "The start date range to retrieve data from. YYYY-MM-DD",
+      "to": "The end date range to retrieve data. YYYY-MM-DD"
     }
   },
   "sample_request": {

@@ -1,16 +1,18 @@
 {
   "description": "This allows a merchant to capture or collect the preauthorised funds from the customer i.e. after value or service has been given to the customer a merchant would capture the preauthorised amount",
-  "endpoint": "POST /v3/charges/:flw_ref/capture",
+  "endpoint": "POST /charges/:flw_ref/capture",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": [
       "params",
       "post_body"
     ],
-    "authorization": "Bearer {{secret_key}}",
     "spec": {
-      "secret_key": "Required - true : This is a unique key generated for each button created on Rave’s dashboard. It starts with a prefix FLWSECK and ends with suffix X.",
-      "flw_ref": "Required - true : This is he flw_ref returned in the capture response.",
-      "amount": "Required - false : This allows you capture an amount less than the original amount authorised on the card"
+      "flw_ref": "Required: This is the flw_ref returned in the capture response.",
+      "amount": "Required: This allows you capture an amount less than the original amount authorised on the card"
     }
   },
   "sample_request": {

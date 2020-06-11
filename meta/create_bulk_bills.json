@@ -1,12 +1,16 @@
 {
   "description": "This meta shows you how to create bulk bills payment",
-  "endpoint": "POST /v3/bulk-bills",
+  "endpoint": "POST /bulk-bills",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "bulk_reference": "This is a reference that identifies the batch request being made for bulk requests.",
-      "callback_url": "This is an endpoint supplied by you the developer/merchant so we can send a response when each request in the bulk is completed.",
-      "bulk_data": "This is an array containing each individual requests in the batch. Please see the create single bill payment for description for  each individual request"
+      "bulk_reference": "Required: This is a reference that identifies the batch request being made for bulk requests.",
+      "callback_url": "Required: This is an endpoint supplied by you the developer/merchant so we can send a response when each request in the bulk is completed.",
+      "bulk_data": "Required: This is an array containing each individual requests in the batch. Please see the create single bill payment for description for each individual request"
     }
   },
   "sample_request": {

@@ -1,15 +1,17 @@
 {
   "description": "Get details of a payment plan",
-  "endpoint": "GET /v3/payment-plans/:id",
+  "endpoint": "GET /payment-plans/:id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "payment plan id"
+      "id": "Required: This is the unique id of the payment plan you want to fetch. It is returned in the call to create a payment plan as data.id"
     }
   },
-  "sample_request": {
-    "id": 3806
-  },
+  "sample_request": "GET /payment-plans/3806",
   "sample_response": {
     "status": "success",
     "message": "Payment plan fetched",

@@ -1,11 +1,15 @@
 {
   "description": "This allows you initiate a transaction refund",
-  "endpoint": "POST /v3/refunds",
+  "endpoint": "POST /transactions/:id/refund",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "post_body"],
     "spec": [
       {
-        "flw_ref": "This is the flw_ref returned in the charge response"
+        "id": "Required: This is the transaction unique identifier. It is returned in the initiate transaction call as data.id"
       },
       {
         "amount": "This is an optional parameter and should be sent if you would like to refund a partial amount"
@@ -13,7 +17,7 @@
     ]
   },
   "sample_request": {
-    "flw_ref": "URF_1577867664541_3572735",
+    "id": "URF_1577867664541_3572735",
     "amount": 5000
   },
   "sample_response": {

@@ -1,14 +1,18 @@
 {
   "description": "This meta shows you how to update the order you created using the order ID",
-  "endpoint": "PUT /v3/product-orders/:order_id",
+  "endpoint": "PUT /product-orders/:order_id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body, params",
     "spec": {
       "params":{
-        "order_id": "This is the order id of the order you first created using this endpoint: /v3/billers/:id/products/:product_id/orders"
+        "order_id": "Required: This is the order id of the order you first created using this endpoint: /billers/:id/products/:product_id/orders"
       },
-      "amount": "This is the amount for the order you would like to pay for.",
-      "reference": "This is a unique reference passed by the developer to identify transactions on their end."
+      "amount": "Required: This is the amount you want to update the order with.",
+      "reference": "This is your unique reference for this order."
     }
   },
   "sample_request": {

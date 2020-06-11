@@ -1,15 +1,17 @@
 {
   "description": "Get a single transfer beneficiary details",
-  "endpoint": "GET /v3/beneficiaries/:id",
+  "endpoint": "GET /beneficiaries/:id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "This is the id of the beneficiary, it is returned in the create beneficiary call as data.id"
+      "id": "Required: This is the unique identifier for the beneficiary you intend to fetch. It is returned in the call to create a beneficiary as data.id"
     }
   },
-  "sample_request": {
-    "id": "2923"
-  },
+  "sample_request": "GET /beneficiaries/2923",
   "sample_response": {
     "status": "success",
     "message": "Payout beneficiary fetched",

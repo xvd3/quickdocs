@@ -1,10 +1,14 @@
 {
   "description": "This endpoint allows you to get bulk tokenize charge",
-  "endpoint": "GET /v3/bulk-tokenized-charges/:bulk_id",
+  "endpoint": "GET /bulk-tokenized-charges/:bulk_id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "bulk_id": "This is the id returned in the bulk charge response."
+      "bulk_id": "Required: This is the id returned in the bulk charge response."
     }
   },
   "sample_request": {

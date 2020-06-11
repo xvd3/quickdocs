@@ -1,17 +1,14 @@
 {
-  "description": "This meta shows you how to create an bill payments",
-  "endpoint": "POST /v3/bill-categories",
+  "description": "This meta shows you how to  fetch all bill categories on your account",
+  "endpoint": "GET /bill-categories",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "none"
   },
-  "sample_request": {
-    "country": "NG",
-    "customer": "+23490803840303",
-    "amount": 500,
-    "recurrence": "ONCE",
-    "type": "AIRTIME",
-    "reference": "9300049404444"
-  },
+  "sample_request": {},
   "sample_response": {
     "status": "success",
     "message": "bill categories retrieval successful",

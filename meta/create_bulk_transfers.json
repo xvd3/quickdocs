@@ -1,19 +1,23 @@
 {
   "description": "This meta shows you how to initiate a bulk transfer",
-  "endpoint": "POST /v3/bulk-transfers",
+  "endpoint": "POST /bulk-transfers",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {
       "title": "Title of the bulk tranfer",
-      "bulk_data": "Array containing individual transfer objects"
+      "bulk_data": "An array of objects containing the transfer charge data. This array contains the same payload you would passed to create a single transfer with multiple different values."
     }
   },
   "sample_request": {
-    "title": "akhlm pstmn blktrnfr xx03",
+    "title": "Staff Salary",
     "bulk_data": [
       {
         "bank_code": "044",
-        "account_numberr": "0690000032",
+        "account_number": "0690000032",
         "amount": 45000,
         "currency": "NGN",
         "narration": "akhlm blktrnsfr",

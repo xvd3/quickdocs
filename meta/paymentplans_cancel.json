@@ -1,15 +1,17 @@
 {
   "description": "Cancel an existing payment plan",
-  "endpoint": "PUT /v3/payment-plans/:id/cancel",
+  "endpoint": "PUT /payment-plans/:id/cancel",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "payment plan id"
+      "id": "Required: This is the unique ìd` of the payment plan you want to cancel."
     }
   },
-  "sample_request": {
-    "id": 3807
-  },
+  "sample_request": "PUT /payment-plans/3807/cancel",
   "sample_response": {
     "status": "success",
     "message": "Payment plan cancelled",

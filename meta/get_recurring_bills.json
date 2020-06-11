@@ -1,6 +1,10 @@
 {
   "description": "This meta shows you how to fetch a recurring bill payments",
-  "endpoint": "GET /v3/recurring-bills",
+  "endpoint": "GET /recurring-bills",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "none"
   },

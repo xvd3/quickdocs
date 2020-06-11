@@ -1,30 +1,25 @@
 {
   "description": "This meta describes how to find a details about a card using the card bin",
-  "endpoint": "GET /v3/card-bins/:bin",
+  "endpoint": "GET /card-bins/:bin",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "params": {
-      "bin": "Required - the first 6 six digits on a debit/credit card"
-    },
-    "payload": {
-      "public_key": "Required - true: This is a unique key generated on your flutterwave dashboard. It starts with a prefix FLWPUBK and ends with suffix X."
+      "bin": "Required: the first 6 six digits on a debit/credit card"
     }
   },
-  "sample_request": {
-    "method": "GET",
-    "path": "/v3/card-bins/475130",
-    "body": {
-      "public_key": "FLWPUBK-6c4e3dcb21282d44f907c9c9ca7609cb-X"
-    }
-  },
+  "sample_request": "GET /card-bins/475130",
   "sample_response": {
-      "status": "success",
-      "message": "completed",
-      "data": {
-          "issuing_country": "UNITED KINGDOM GB",
-          "bin": "475130",
-          "card_type": "VISA",
-          "issuer_info": "NATIONAL WESTMINSTER BANK PLC DEBITCLASSIC"
-      }
+    "status": "success",
+    "message": "completed",
+    "data": {
+      "issuing_country": "UNITED KINGDOM GB",
+      "bin": "475130",
+      "card_type": "VISA",
+      "issuer_info": "NATIONAL WESTMINSTER BANK PLC DEBITCLASSIC"
+    }
   }
 }

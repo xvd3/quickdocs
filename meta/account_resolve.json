@@ -1,18 +1,20 @@
 {
   "description": "Resolve a bank account to get the holder's fullname.",
-  "endpoint": "POST /v3/accounts/resolve",
+  "endpoint": "POST /accounts/resolve",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
-    "type":"post_body",
+    "type": "post_body",
     "spec": {
-      "account_number": "Account number to be resolved",
-      "account_bank": "Bank code ",
-      "public_key": "Merchant public key. Retrievable from the Flutterwave dashboard"
+      "account_number": " Required: Account number to be resolved",
+      "account_bank": "Required: Bank code"
     }
   },
   "sample_request": {
     "account_number": "0690000032",
-    "account_bank": "044",
-    "public_key": "FLWPUBK-58f1a13c87594d60edc91affff3a7645-X"
+    "account_bank": "044"
   },
   "sample_response": {
     "status": "success",

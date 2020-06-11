@@ -1,14 +1,18 @@
 {
   "description": "Withdraw existing funds from a virtual card",
-  "endpoint": "POST /v3/virtual-cards/:id/withdraw",
+  "endpoint": "POST /virtual-cards/:id/withdraw",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": ["params", "post_body"],
     "spec": [
       {
-        "id": "Virtual card id"
+        "id": "Required: This is the unique id of the particular card you want to withdraw funds from. You can get this id from the call to create a virtual card as data.id"
       },
       {
-        "amount": "This is the amount to withdraw"
+        "amount": "Required: This is the amount you want to withdraw"
       }
     ]
   },

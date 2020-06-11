@@ -1,12 +1,16 @@
 {
   "description": "Create a virtual card",
-  "endpoint": "POST /v3/virtual-cards",
+  "endpoint": "POST /virtual-cards",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "currency": "This is the currency the card would be denominated in",
-      "amount": "This is the amount to prefund the card with on card creation",
-      "billing_name": "This is the Name on the card",
+      "currency": "Required: This is the currency the card would be denominated in",
+      "amount": "Required: This is the amount to prefund the card with on card creation",
+      "billing_name": "Required: This is the name that will appear on the card",
       "billing_address": "This is the registered address for the card. e.g. Your house address where you would receive your card statements",
       "billing_city": "This is the City / District / Suburb / Town / Village. registered for the card",
       "billing_state": "This is the State / County / Province / Region",

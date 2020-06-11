@@ -1,7 +1,22 @@
 {
   "description": "Fetch all payment plans on your account",
-  "endpoint": "GET /v3/payment-plans",
-  "request_spec": {},
+  "endpoint": "GET /payment-plans",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
+  "request_spec": {
+    "type": "params",
+    "spec": {
+      "from": "This is the specified date to start the list from. YYYY-MM-DD",
+      "to": "The is the specified end period for the search. YYYY-MM-DD",
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page",
+      "amount": "This is the exact amount set when creating the payment plan",
+      "currency": "This is the currency the payment plan amount is charged in.",
+      "interval": "This is how often the payment plan is set to execute",
+      "status": "This is the status of the payment plan"
+    }
+  },
   "sample_request": {},
   "sample_response": {
     "status": "success",

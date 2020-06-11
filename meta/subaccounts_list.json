@@ -1,12 +1,17 @@
 {
-  "description": "This allows you to list all or specific subaccounts.",
-  "endpoint": "GET /v3/subaccounts",
+  "description": "This allows you to list all subaccounts.",
+  "endpoint": "GET /subaccounts",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params_query",
     "spec": {
       "account_number": "This is the subaccount's account number, it can be used to retrieve the specific subaccount.",
       "account_bank": "This is the bank code for the subaccount's bank, you can use the List of Banks for Transfer API to retrieve a bank code.",
       "bank_name": "This is the subaccounts bank name e.g. Access Bank Nigeria, you can use the List of Banks for Transfer API to retrieve a bank name."
+      "page": "This is the page number to retrieve e.g. setting 1 retrieves the first page."
     }
   },
   "sample_request": {},

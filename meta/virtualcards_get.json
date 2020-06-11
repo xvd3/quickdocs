@@ -1,10 +1,14 @@
 {
   "description": "Fetch details of a single card",
-  "endpoint": "GET /v3/virtual-cards/:id",
+  "endpoint": "GET /virtual-cards/:id",
+  "headers": {
+    "Authorization": "Bearer {Secret Key}",
+    "Content-Type": "application/json"
+  },
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "virtual card id"
+      "id": "This is the unique id of the particular card you want to fetch its details. You can get this id from the call to create a virtual card or list virtual cards as data.id"
     }
   },
   "sample_request": {
