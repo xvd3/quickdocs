@@ -8,12 +8,10 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "order_ref": "This is the order reference returned in the virtual-nuban creation."
+      "order_ref": "Required: This is the order reference returned in the virtual account number creation."
     }
   },
-  "sample_request": {
-    "order_ref": "URF_1579513580629_5981535"
-  },
+  "sample_request":"GET /virtual-account-numbers/URF_1579513580629_5981535",
   "sample_response": {
     "status": "success",
     "message": "Virtual nuban fetched",
