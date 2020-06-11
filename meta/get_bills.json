@@ -6,19 +6,364 @@
     "Content-Type": "application/json"
   },
   "request_spec": {
-    "type": "params",
+    "type": "params_query",
     "spec": {
-      "from": "This is the start date it can be in formats: YYYY-MM-DDTHH:MM:SSZ or YYYY-MM-DD",
-      "to": "This is the end date, it can be in formats: YYYY-MM-DDTHH:MM:SSZ or YYYY-MM-DD",
+      "from": "Required: This is the start date it can be in formats: YYYY-MM-DDTHH:MM:SSZ or YYYY-MM-DD",
+      "to": "Required: This is the end date, it can be in formats: YYYY-MM-DDTHH:MM:SSZ or YYYY-MM-DD",
       "page": "This is the page you want to start from",
       "reference": "This is the customer ID, pass this if you want to retrieve bill history for a particular customer ID."
     }
   },
-  "sample_request":{
-    "from": "2018-08-01",
-    "to": "2018-08-27",
-    "page": 20,
-    "reference": "+233494850059"
-  },
-  "sample_response": {}
+  "sample_request": "GET /bills?from=2018-08-01&to=2018-08-27",
+  "sample_response": {
+    "status": "success",
+    "message": "bills retrieval successful",
+    "data": {
+      "summary": [
+        {
+          "currency": "NGN",
+          "sum_bills": 28766.76,
+          "sum_commission": 138.28,
+          "sum_dstv": 0,
+          "sum_airtime": 4550,
+          "count_dstv": 0,
+          "count_airtime": 10
+        },
+        {
+          "currency": "KES",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "GHS",
+          "sum_bills": 20,
+          "sum_commission": 0.5,
+          "sum_dstv": 0,
+          "sum_airtime": 20,
+          "count_dstv": 0,
+          "count_airtime": 2
+        },
+        {
+          "currency": "USD",
+          "sum_bills": 3,
+          "sum_commission": 0.08,
+          "sum_dstv": 0,
+          "sum_airtime": 3,
+          "count_dstv": 0,
+          "count_airtime": 1
+        },
+        {
+          "currency": "EUR",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "ZAR",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "GBP",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "TZS",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "UGX",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "RWF",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "ZMW",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "INR",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "XOF",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "MUR",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "ETB",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "JPY",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "MAD",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        },
+        {
+          "currency": "XAF",
+          "sum_bills": 0,
+          "sum_commission": 0,
+          "sum_dstv": 0,
+          "sum_airtime": 0,
+          "count_dstv": 0,
+          "count_airtime": 0
+        }
+      ],
+      "transactions": [
+        {
+          "currency": "NGN",
+          "customer_id": "+2349082930030",
+          "frequency": "Hourly",
+          "amount": "500.0000",
+          "product": "AIRTIME",
+          "product_name": "9MOBILE",
+          "commission": 10,
+          "created_at": "2018-08-24T05:35:07.213Z",
+          "tx_id": 7895
+        },
+        {
+          "currency": "USD",
+          "customer_id": "+190830030",
+          "frequency": "One Time",
+          "amount": "20.0000",
+          "product": "AIRTIME",
+          "product_name": "",
+          "commission": 0.5,
+          "created_at": "2018-08-24T01:06:56.357Z",
+          "tx_id": 7894
+        },
+        {
+          "currency": "USD",
+          "customer_id": "+190830030",
+          "frequency": "One Time",
+          "amount": "20.0000",
+          "product": "AIRTIME",
+          "product_name": "",
+          "commission": 0.5,
+          "created_at": "2018-08-24T01:06:47.323Z",
+          "tx_id": 7893
+        },
+        {
+          "currency": "GHS",
+          "customer_id": "+2339026420185",
+          "frequency": "One Time",
+          "amount": "10.0000",
+          "product": "AIRTIME",
+          "product_name": null,
+          "commission": 0.25,
+          "created_at": "2018-08-24T01:06:44.237Z",
+          "tx_id": 7892
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "+2349082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "AIRTIME",
+          "product_name": "9MOBILE",
+          "commission": 10,
+          "created_at": "2018-08-24T01:06:31.55Z",
+          "tx_id": 7891
+        },
+        {
+          "currency": "USD",
+          "customer_id": "+190830030",
+          "frequency": "One Time",
+          "amount": "20.0000",
+          "product": "AIRTIME",
+          "product_name": null,
+          "commission": 0.5,
+          "created_at": "2018-08-24T00:52:30.637Z",
+          "tx_id": 7890
+        },
+        {
+          "currency": "GHS",
+          "customer_id": "+2339026420185",
+          "frequency": "One Time",
+          "amount": "10.0000",
+          "product": "AIRTIME",
+          "product_name": null,
+          "commission": 0.25,
+          "created_at": "2018-08-24T00:52:28.953Z",
+          "tx_id": 7889
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "2349082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "AIRTIME",
+          "product_name": null,
+          "commission": 10,
+          "created_at": "2018-08-24T00:52:27.08Z",
+          "tx_id": 7888
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "+2349082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "AIRTIME",
+          "product_name": "9MOBILE",
+          "commission": 10,
+          "created_at": "2018-08-23T16:56:07.193Z",
+          "tx_id": 7868
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "+2349082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "AIRTIME",
+          "product_name": "9MOBILE",
+          "commission": 10,
+          "created_at": "2018-08-23T16:55:49.413Z",
+          "tx_id": 7867
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "09082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "AIRTIME",
+          "product_name": null,
+          "commission": 10,
+          "created_at": "2018-08-23T16:07:47.203Z",
+          "tx_id": 7863
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "09082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "9MOBILE",
+          "product_name": "9MOBILE",
+          "commission": 0,
+          "created_at": "2018-08-07T10:30:35.997Z",
+          "tx_id": 6788
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "09082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": null,
+          "product_name": null,
+          "commission": 0,
+          "created_at": "2018-08-07T10:30:11.23Z",
+          "tx_id": 6787
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "09082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "9MOBILE",
+          "product_name": "9MOBILE",
+          "commission": 0,
+          "created_at": "2018-08-06T12:55:38.993Z",
+          "tx_id": 6758
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "09082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "9MOBILE",
+          "product_name": "9MOBILE",
+          "commission": 0,
+          "created_at": "2018-08-06T12:55:11.827Z",
+          "tx_id": 6756
+        },
+        {
+          "currency": "NGN",
+          "customer_id": "09082930030",
+          "frequency": "One Time",
+          "amount": "500.0000",
+          "product": "9MOBILE",
+          "product_name": "9MOBILE",
+          "commission": 0,
+          "created_at": "2018-08-02T14:53:42.333Z",
+          "tx_id": 6642
+        }
+      ],
+      "total": 16,
+      "total_pages": 0,
+      "reference": null
+    }
+  }
 }
