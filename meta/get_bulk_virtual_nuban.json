@@ -8,12 +8,10 @@
   "request_spec": {
     "type": "params_query",
     "spec": {
-      "batch_id": "This is the batch ID returned in the bulk virtual account numbers creation."
+      "batch_id": "Required: This is the batch ID returned in the bulk virtual account numbers creation."
     }
   },
-  "sample_request": {
-    "batch_id": "-RND_2641579516055928"
-  },
+  "sample_request":"GET /bulk-virtual-account-numbers/-RND_2641579516055928",
   "sample_response": {
     "status": "success",
     "message": "Bulk virtual accounts fetched",
