@@ -8,16 +8,16 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "account_bank": "This is the sub-accounts bank ISO code, use the List of Banks for Transfer endpoint to retrieve a list of bank codes.",
-      "account_number": "This is the customer's account number.",
-      "business_name": "This is the sub-account business name.",
+      "account_bank": "Required: This is the sub-accounts bank ISO code, use the List of Banks for Transfer endpoint to retrieve a list of bank codes.",
+      "account_number": "Required: This is the customer's account number.",
+      "business_name": "Required: This is the sub-account business name.",
       "business_email": "This is the sub-account business email",
       "business_contact": "This is the contact person for the sub-account e.g. Richard Hendrix",
       "business_contact_mobile": "Business contact number.",
-      "business_mobile": "Primary business contact number",
-      "country": "This is the ISO country code of the merchant e.g. NG, GH, KE etc.",
-      "split_type": "This can be set as percentage or flat when set as percentage",
-      "split_value": "This can be a percentage value or flat value depending on what was set on split_type",
+      "business_mobile": "Required: Primary business contact number",
+      "country": "Required: This is the ISO country code of the merchant e.g. NG, GH, KE etc.",
+      "split_type": "Required: This can be set as percentage or flat when set as percentage",
+      "split_value": "This can be a percentage value or flat value depending on what was set on split_type. Note that the % value is in decimal. So 50% is 0.5 and so on.",
       "meta": [
         {
           "meta_name": "This allows you pass extra information (key) about the sub-account.",
