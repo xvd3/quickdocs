@@ -1,6 +1,6 @@
 {
   "description": "Block/Unblock a virtual card",
-  "endpoint": "PUT /virtual-cards/:id/status/:status",
+  "endpoint": "PUT /virtual-cards/:id/status/:status_action",
   "headers": {
     "Authorization": "Bearer {Secret Key}",
     "Content-Type": "application/json"
@@ -8,14 +8,11 @@
   "request_spec": {
     "type": "params",
     "spec": {
-      "id": "Virtual card id",
-      "status": "This is the action to perform on the card, possible parameters are \"block\" and \"unblock\""
+      "id": "Required: This is the unique id of the particular card you want to withdraw funds from. You can get this id from the call to create a virtual card as data.id",
+      "status": "Required: This is the action you want to perform on the virtual card. Can be block or unblock"
     }
   },
-  "sample_request": {
-    "id": "38c9201a-fcb2-48fd-875e-6494ed79a6bb    ",
-    "status": "block"
-  },
+  "sample_request": "PUT /virtual-cards/38c9201a-fcb2-48fd-875e-6494ed79a6bb/status/block",
   "sample_response": {
     "status": "success",
     "message": "Card freeze successful",
