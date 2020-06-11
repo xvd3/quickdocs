@@ -8,12 +8,12 @@
   "request_spec": {
     "type": "post_body",
     "spec": {
-      "email": "This could be a generic email address",
+      "email": "Required: This could be a generic email address",
       "is_permanent": "This allows you create a static account number i.e. it doesn't expire",
-      "duration": "This is represented in days e.g. passing 2 means 2 days. It is the expiry date for the account number. ",
-      "frequency": "This is the number of times a generated account number can receive payments.",
-      "tx_ref": "This is a transaction reference that would be returned each time a transfer is done to the account.",
-      "amount": "The desired amount to be collected"
+      "duration": "Required: This is represented in days e.g. passing 2 means 2 days. It is the expiry date for the account number. ",
+      "frequency": "Required: This is the number of times a generated account number can receive payments.",
+      "tx_ref": "Required: This is a transaction reference that would be returned each time a transfer is done to the account.",
+      "amount": "Required: The desired amount to be collected"
     }
   },
   "sample_request": {
@@ -37,7 +37,7 @@
       "created_at": "2020-01-23 10:50:02",
       "expiry_date": "2020-01-28 23:59:59",
       "note": "Please make a bank transfer to Jane Wu",
-      "amount": 50700
+      "amount": 50000
     }
   }
 }
