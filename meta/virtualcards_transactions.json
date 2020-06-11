@@ -9,21 +9,17 @@
     "type": ["params", "params_query"],
     "spec": [
       {
-        "id": "The virtual card id"
+        "id": "Required: This is the unique id of the particular card you want to fetch all its transactions. You can get this id from the call to create a virtual card as data.id"
       },
       {
-        "from": "The start date",
-        "to": "The end date",
-        "index": "Pass 0 if you want to start from the beginning",
-        "size": "Specify how many transactions you want to retrieve in a single call"
+        "from": "Required: This is the start date of the transaction request period",
+        "to": "Required: This is the end date of the transaction request period",
+        "index": "Required: Pass 0 if you want to start from the beginning",
+        "size": "Required: Specify how many transactions you want to retrieve in a single call"
       }
     ]
   },
-  "sample_request": {
-    "id": "38c9201a-fcb2-48fd-875e-6494ed79a6bb",
-    "from": "2019-01-01",
-    "to": "2020-01-13"
-  },
+  "sample_request": "GET '/virtual-cards/38c9201a-fcb2-48fd-875e-6494ed79a6bb/transactions?from=2019-01-01&to=2020-01-13&index=1&size=5'",
   "sample_response": {
     "status": "success",
     "message": "Card transactions fetched successfully",
