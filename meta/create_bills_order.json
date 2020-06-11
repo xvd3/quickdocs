@@ -6,14 +6,20 @@
     "Content-Type": "application/json"
   },
   "request_spec": {
-    "type": ["post_body", "params_query"],
-    "spec": {
-      "country": "This is the country attached to the service being bought e.g. if Service is Airtime and country is NG it means you are buying airtime in Nigeria.",
-      "customer": "This is an object with the name, email and phone number of the customer.",
-      "amount": "This is the amount for the service you would like to order.",
-      "fields": "This is an array of the id, quatity and value of the order",
-      "reference": "This is a unique reference passed by the developer to identify transactions on their end."
-    }
+    "type": ["post_body", "params_query" ],
+    "spec": [
+      {
+        "id": "Required: This is the biller's code",
+        "product_id": "Required: This is the id of the product"
+      },
+      {
+        "country": "This is the country attached to the service being bought e.g. if Service is Airtime and country is NG it means you are buying airtime in Nigeria.",
+        "customer": "Required: This is an object with the name, email and phone number of the customer.",
+        "amount": "This is the amount for the service you would like to order.",
+        "fields": "Required: This is an array of the id, quatity and value of the order",
+        "reference": "This is a unique reference passed by the developer to identify transactions on their end."
+      }
+    ]
   },
   "sample_request": {
     "amount": "3500.00",
